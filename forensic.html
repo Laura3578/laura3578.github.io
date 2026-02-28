@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forensic Psychology &amp; Expert Witness | Dr. Laura L. Walsh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate:  #1e2d3d;
+    --deep:   #111b26;
+    --terra:  #b85c38;
+    --sand:   #e8dcc8;
+    --cream:  #f5f0e8;
+    --mist:   #8fa3b1;
+    --white:  #fdfaf6;
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 4rem;
+    background: rgba(253,250,246,0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(30,45,61,0.08);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .nav-logo img { height: 38px; width: 38px; object-fit: cover; border-radius: 3px; }
+  .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; }
+  .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--terra); }
+  .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
+  .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
+
+  /* ─── PAGE HERO ───────────────────────────────────── */
+  .page-hero {
+    min-height: 52vh;
+    background: #1b2d4a;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 10rem 4rem 5rem;
+    position: relative; overflow: hidden;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 80% at 80% 40%, rgba(184,92,56,0.12) 0%, transparent 65%);
+  }
+  .topo-bg {
+    position: absolute; inset: 0; pointer-events: none; opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Cellipse cx='420' cy='320' rx='80' ry='65'/%3E%3Cellipse cx='420' cy='320' rx='130' ry='108'/%3E%3Cellipse cx='420' cy='320' rx='180' ry='155'/%3E%3Cellipse cx='420' cy='320' rx='235' ry='205'/%3E%3Cellipse cx='420' cy='320' rx='295' ry='258'/%3E%3Cellipse cx='420' cy='320' rx='360' ry='315'/%3E%3Cellipse cx='420' cy='320' rx='430' ry='378'/%3E%3Cellipse cx='420' cy='320' rx='505' ry='445'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+  }
+  .page-hero-content { position: relative; z-index: 1; max-width: 800px; }
+  .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.2rem; }
+  .page-title { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; }
+  .page-title em { font-style: italic; color: var(--sand); }
+  .page-subtitle { font-family: var(--serif); font-size: 1.2rem; font-weight: 300; font-style: italic; color: var(--mist); max-width: 580px; line-height: 1.7; }
+
+  /* ─── BREADCRUMB ──────────────────────────────────── */
+  .breadcrumb {
+    background: var(--sand); padding: 0.9rem 4rem;
+    display: flex; align-items: center; gap: 0.6rem;
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--slate);
+    border-bottom: 1px solid rgba(30,45,61,0.1);
+  }
+  .breadcrumb a { color: var(--terra); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb-sep { color: var(--mist); }
+
+  /* ─── LAYOUT ──────────────────────────────────────── */
+  .content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 4rem; }
+
+  /* ─── SECTION STYLES ──────────────────────────────── */
+  .section { padding: 5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .section:last-child { border-bottom: none; }
+  .section-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); display: block; margin-bottom: 0.75rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--slate); line-height: 1.15; margin-bottom: 1.8rem; }
+  .section-title em { font-style: italic; color: var(--terra); }
+  .section-body { font-size: 0.95rem; line-height: 1.85; color: #445566; max-width: 700px; margin-bottom: 1.5rem; }
+
+  /* ─── OVERVIEW SPLIT ──────────────────────────────── */
+  .overview-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 5rem; align-items: start; }
+  .overview-left .section-body { max-width: 100%; }
+
+  /* ─── CARDS ───────────────────────────────────────── */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5px; margin-top: 3rem; }
+  .card {
+    background: var(--cream); padding: 2.5rem;
+    position: relative; overflow: hidden;
+    transition: transform 0.25s ease;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--terra); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+  .card:hover::after { transform: scaleX(1); }
+  .card-number { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; }
+  .card h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; color: var(--slate); margin-bottom: 1rem; line-height: 1.25; }
+  .card ul { padding-left: 1rem; }
+  .card li { font-size: 0.88rem; line-height: 1.75; color: #556070; margin-bottom: 0.4rem; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+  .tag { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.7rem; border: 1px solid rgba(30,45,61,0.2); color: var(--mist); border-radius: 2px; }
+
+  /* ─── DARK CARDS (process) ────────────────────────── */
+  .dark-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .dark-card { background: var(--slate); padding: 2.5rem; color: var(--cream); }
+  .dark-card-num { font-size: 2.5rem; font-family: var(--serif); font-weight: 300; color: var(--terra); margin-bottom: 1rem; line-height: 1; }
+  .dark-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 300; color: var(--sand); margin-bottom: 1rem; }
+  .dark-card li { font-size: 0.85rem; line-height: 1.75; color: var(--mist); margin-bottom: 0.4rem; }
+  .dark-card ul { padding-left: 1rem; }
+
+  /* ─── EXPECTATIONS LIST ───────────────────────────── */
+  .expect-list { list-style: none; padding: 0; margin-top: 2rem; }
+  .expect-list li { display: grid; grid-template-columns: 160px 1fr; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); align-items: start; }
+  .expect-list li:last-child { border-bottom: none; }
+  .expect-label { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terra); padding-top: 0.15rem; }
+  .expect-body { font-size: 0.92rem; line-height: 1.8; color: #445566; }
+
+  /* ─── EXAMPLES STRIP ──────────────────────────────── */
+  .examples-strip { background: var(--slate); padding: 5rem 4rem; }
+  .examples-strip .section-label { color: var(--terra); }
+  .examples-strip .section-title { color: var(--cream); }
+  .examples-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .example-card { background: rgba(255,255,255,0.04); padding: 2rem 2.5rem; border-left: 2px solid var(--terra); }
+  .example-card p { font-size: 0.9rem; line-height: 1.8; color: var(--mist); }
+
+  /* ─── CREDENTIALS ─────────────────────────────────── */
+  .cred-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .cred-card { background: var(--cream); padding: 2.5rem; }
+  .cred-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--slate); margin-bottom: 1rem; }
+  .cred-card li { font-size: 0.87rem; line-height: 1.75; color: #556070; margin-bottom: 0.5rem; }
+  .cred-card ul { padding-left: 1rem; }
+
+  /* ─── CONTACT CTA ─────────────────────────────────── */
+  .contact-cta { background: var(--terra); padding: 6rem 4rem; text-align: center; }
+  .contact-cta h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+  .contact-cta h2 em { font-style: italic; }
+  .contact-cta p { font-size: 0.95rem; color: rgba(253,250,246,0.8); margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+  .contact-details { display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .contact-detail { text-align: left; }
+  .contact-detail-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(253,250,246,0.6); margin-bottom: 0.3rem; }
+  .contact-detail-val { font-size: 0.95rem; color: var(--white); }
+  .contact-detail-val a { color: var(--white); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4); }
+  .btn-white { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; background: var(--white); color: var(--terra); text-decoration: none; border-radius: 2px; transition: all 0.25s; margin: 0 0.5rem; }
+  .btn-white:hover { background: var(--slate); color: var(--white); }
+  .btn-outline-white { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.5rem; border: 1.5px solid rgba(255,255,255,0.5); color: var(--white); text-decoration: none; border-radius: 2px; transition: all 0.25s; margin: 0 0.5rem; }
+  .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer { background: var(--deep); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-logo { display: flex; align-items: center; gap: 0.75rem; }
+  .footer-logo img { height: 32px; width: 32px; object-fit: cover; border-radius: 3px; opacity: 0.8; }
+  .footer-logo-text { font-family: var(--serif); font-size: 0.9rem; color: var(--cream); }
+  .footer-logo-text span { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); opacity: 0.7; }
+  .footer-nav { list-style: none; display: flex; gap: 2rem; }
+  .footer-nav a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+  .footer-nav a:hover { opacity: 1; }
+  .footer-copy { font-size: 0.72rem; color: var(--mist); opacity: 0.5; }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .page-hero { padding: 8rem 1.5rem 4rem; }
+    .breadcrumb { padding: 0.9rem 1.5rem; }
+    .content-wrap { padding: 0 1.5rem; }
+    .overview-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .dark-cards-grid { grid-template-columns: 1fr 1fr; }
+    .examples-grid { grid-template-columns: 1fr; }
+    .cred-grid { grid-template-columns: 1fr; }
+    .expect-list li { grid-template-columns: 1fr; gap: 0.3rem; }
+    .examples-strip { padding: 4rem 1.5rem; }
+    .contact-cta { padding: 4rem 1.5rem; }
+    footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
+    .footer-nav { flex-wrap: wrap; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html" class="active">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="topo-bg"></div>
+  <div class="page-hero-content">
+    <p class="page-eyebrow">Expert Witness &nbsp;·&nbsp; Forensic Psychology</p>
+    <h1 class="page-title">Forensic Psychology<br><em>for Civil &amp; Employment Matters</em></h1>
+    <p class="page-subtitle">Rigorous psychological expertise where the consulting room meets the courtroom — grounded in 20 years of clinical practice and evidence-based methodology.</p>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">·</span>
+  <span>Forensic &amp; Expert Witness</span>
+</div>
+
+<div class="content-wrap">
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="overview-grid">
+      <div class="overview-left">
+        <span class="section-label">Overview for Attorneys</span>
+        <h2 class="section-title">A niche at the intersection of<br><em>psychology and law</em></h2>
+        <p class="section-body">Dr. Walsh is a Licensed Clinical Psychologist with over 20 years of clinical and consultative experience and a focused practice in forensic applications of psychology in civil and employment-related matters. Her work centers on comprehensive psychological assessment, diagnostic formulation, and detailed record review related to emotional distress, trauma, grief, suicide risk and bereavement, substance use, complex adult psychopathology, and ADHD-related accommodations and discrimination.</p>
+        <p class="section-body">Evaluations rely on empirically validated assessment measures and data-driven analysis, with reports written in clear, accessible language for legal and lay audiences. Dr. Walsh accepts work from both plaintiff and defense counsel.</p>
+      </div>
+      <div class="overview-right">
+        <div class="card" style="background:var(--slate);color:var(--cream);">
+          <div class="card-number" style="color:var(--terra);">Licensed In</div>
+          <h3 style="color:var(--sand);font-size:1.1rem;margin-bottom:1.5rem;">Colorado &amp; Illinois</h3>
+          <ul style="list-style:none;padding:0;">
+            <li style="font-size:0.87rem;color:var(--mist);padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">Colorado #PSY.0006327</li>
+            <li style="font-size:0.87rem;color:var(--mist);padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">Illinois #071009203</li>
+            <li style="font-size:0.87rem;color:var(--mist);padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.07);">Federal cases accepted by request</li>
+            <li style="font-size:0.87rem;color:var(--mist);padding:0.6rem 0;">Telehealth evaluations available</li>
+          </ul>
+          <a href="https://drlauralwalsh.com/s/Dr-Laura-L-Walsh-CV-Rev-02-26.pdf" download style="display:inline-block;margin-top:1.5rem;font-size:0.75rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px;">Download CV (PDF) →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS OF EXPERTISE -->
+  <section class="section" id="expertise">
+    <span class="section-label">Areas of Professional Focus</span>
+    <h2 class="section-title">Forensic work grounded in the<br><em>Specialty Guidelines for Forensic Psychology</em></h2>
+    <p class="section-body">Clinical expertise in complex adult presentations — integrated with the specific questions courts and attorneys need answered.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-number">01</div>
+        <div class="card-tags"><span class="tag">Emotional Distress</span><span class="tag">PTSD / Trauma</span><span class="tag">Mood &amp; Anxiety</span></div>
+        <h3>Psychological Injury in Civil &amp; Employment Cases</h3>
+        <ul>
+          <li>Assessment of alleged emotional distress and functional impairment linked to workplace events or civil wrongs</li>
+          <li>Distinguishing pre-existing conditions from incident-related symptoms</li>
+          <li>Opinions on diagnosis, severity, prognosis, and impact on work and daily functioning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-number">02</div>
+        <div class="card-tags"><span class="tag">Adult ADHD</span><span class="tag">Executive Function</span><span class="tag">ADA</span></div>
+        <h3>ADHD Accommodations &amp; Discrimination</h3>
+        <ul>
+          <li>Evaluation of adult ADHD and executive-function difficulties relevant to performance and safety</li>
+          <li>Analysis of alleged failures to accommodate ADHD in workplace or academic settings</li>
+          <li>Clarifying the relationship between ADHD symptoms, disciplinary actions, and claimed damages</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-number">03</div>
+        <div class="card-tags"><span class="tag">Suicide Risk</span><span class="tag">Psychological Autopsy</span><span class="tag">Grief</span></div>
+        <h3>Suicide, Bereavement &amp; Wrongful Death</h3>
+        <ul>
+          <li>Evaluation of suicide risk and related clinical factors in civil and employment contexts</li>
+          <li>Consultation in wrongful death cases, including analysis of evidence relevant to suicide determination</li>
+          <li>Assessment of suicide bereavement and complicated grief reactions among survivors</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-number">04</div>
+        <div class="card-tags"><span class="tag">Alcohol / Drugs</span><span class="tag">Co-occurring Disorders</span></div>
+        <h3>Substance Use &amp; Co-Occurring Conditions</h3>
+        <ul>
+          <li>Assessment of substance use patterns and their role in claimed impairment or alleged misconduct</li>
+          <li>Parsing contributions of substance use versus trauma, mood, or ADHD to reported symptoms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /content-wrap -->
+
+<!-- PROCESS — DARK FULL-WIDTH -->
+<section style="background:var(--deep);padding:5rem 0;" id="process">
+  <div class="content-wrap">
+    <span class="section-label" style="color:var(--terra);">The Process</span>
+    <h2 class="section-title" style="color:var(--cream);">Evaluation &amp; testimony,<br><em style="color:var(--sand);">step by step</em></h2>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 4rem;">
+    <div class="dark-cards-grid">
+      <div class="dark-card">
+        <div class="dark-card-num">01</div>
+        <h3>Initial Case Consultation</h3>
+        <ul>
+          <li>Brief call with retaining counsel to clarify referral questions and jurisdiction</li>
+          <li>Conflicts check and determination of role — consulting vs. testifying expert</li>
+          <li>Preliminary scope, timelines, and fit with expertise</li>
+        </ul>
+      </div>
+      <div class="dark-card">
+        <div class="dark-card-num">02</div>
+        <h3>Record Review &amp; Collateral Data</h3>
+        <ul>
+          <li>Review of pleadings, discovery, medical and mental health records, employment records, and prior evaluations</li>
+          <li>Identification of additional records or collateral interviews needed</li>
+        </ul>
+      </div>
+      <div class="dark-card">
+        <div class="dark-card-num">03</div>
+        <h3>Forensic Evaluation</h3>
+        <ul>
+          <li>In-person or secure video interview focused on time-linked changes in symptoms and functioning</li>
+          <li>Empirically validated psychological tests and response-style measures, when indicated</li>
+          <li>Assessment guided by legal questions rather than treatment needs</li>
+        </ul>
+      </div>
+      <div class="dark-card">
+        <div class="dark-card-num">04</div>
+        <h3>Opinions, Report &amp; Testimony</h3>
+        <ul>
+          <li>Written report addressing each referral question with transparent reasoning and citation to data</li>
+          <li>Independent opinions on diagnosis, causation, prognosis, and functional impact</li>
+          <li>Availability for deposition and trial testimony</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section" id="approach">
+    <span class="section-label">What Retaining Counsel Can Expect</span>
+    <h2 class="section-title">Professional standards,<br><em>without exception</em></h2>
+    <ul class="expect-list">
+      <li><span class="expect-label">Objectivity</span><span class="expect-body">Opinions are grounded in data, not advocacy for either side. Dr. Walsh accepts work from both plaintiff and defense counsel.</span></li>
+      <li><span class="expect-label">Data-Driven</span><span class="expect-body">Empirically validated measures, structured interviews, and careful record synthesis form the foundation of every opinion.</span></li>
+      <li><span class="expect-label">Clear Communication</span><span class="expect-body">Reports are written for judges and juries — technical concepts explained in straightforward, accessible language.</span></li>
+      <li><span class="expect-label">Timely Work</span><span class="expect-body">Evaluations, reports, and testimony delivered in a prompt, organized manner that meets or exceeds agreed-upon deadlines.</span></li>
+      <li><span class="expect-label">Candid Feedback</span><span class="expect-body">Early input on strengths, limitations, and potential vulnerabilities in a case's psychological theory.</span></li>
+      <li><span class="expect-label">Ethical Standards</span><span class="expect-body">No contingency arrangements. Close attention to ethical and legal standards in forensic work at all times.</span></li>
+    </ul>
+  </section>
+
+</div><!-- /content-wrap -->
+
+<!-- ILLUSTRATIVE MATTERS — DARK STRIP -->
+<section class="examples-strip" id="examples">
+  <span class="section-label">Illustrative Forensic Matters</span>
+  <h2 class="section-title">De-identified examples of<br><em style="color:var(--sand);">typical referral questions</em></h2>
+  <div class="examples-grid">
+    <div class="example-card">
+      <p>Federal employment discrimination case in the Northern District of Illinois involving alleged employment-related psychological injury.</p>
+    </div>
+    <div class="example-card">
+      <p>Defense-side consultation in a wrongful death lawsuit arising from a workplace warehouse fatality, focusing on evidence relevant to a suicide determination.</p>
+    </div>
+    <div class="example-card">
+      <p>Evaluation of alleged emotional distress and functional impairment in the context of performance-based discipline and ADHD-related symptoms.</p>
+    </div>
+    <div class="example-card">
+      <p>Record review and opinion regarding the adequacy of suicide risk assessment and documentation in a complex clinical setting.</p>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- CREDENTIALS -->
+  <section class="section" id="credentials">
+    <span class="section-label">Credentials</span>
+    <h2 class="section-title">Education, licensure<br><em>&amp; professional involvement</em></h2>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <h3>Licensure</h3>
+        <ul>
+          <li>Licensed Clinical Psychologist, Colorado (#PSY.0006327) — Active</li>
+          <li>Licensed Clinical Psychologist, Illinois (#071009203) — Active</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>Education &amp; Training</h3>
+        <ul>
+          <li>PsyD, Clinical Psychology — Illinois School of Professional Psychology (APA-accredited; Psychoanalytic Minor)</li>
+          <li>MA, Clinical Psychology — Illinois School of Professional Psychology</li>
+          <li>BA, Psychology (Minor: Philosophy) — Texas State University</li>
+          <li>Psychological autopsy methods training — American Association of Suicidology</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>Professional Memberships</h3>
+        <ul>
+          <li>American Association for Suicidology</li>
+          <li>International Association for Suicide Prevention</li>
+          <li>American Psychological Association</li>
+          <li>American Psychology–Law Society (AP-LS)</li>
+          <li>Former adjunct faculty at multiple clinical psychology training programs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /content-wrap -->
+
+<!-- CONTACT CTA -->
+<section class="contact-cta">
+  <h2>Ready to discuss<br><em>a case?</em></h2>
+  <p>Dr. Walsh is based in Trinidad, Colorado and accepts matters in Colorado and Illinois, with select federal cases by request.</p>
+  <div class="contact-details">
+    <div class="contact-detail">
+      <div class="contact-detail-label">Email</div>
+      <div class="contact-detail-val"><a href="mailto:drlauralwalsh@gmail.com">drlauralwalsh@gmail.com</a></div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-label">Phone</div>
+      <div class="contact-detail-val">773-474-0025</div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-label">Location</div>
+      <div class="contact-detail-val">Trinidad, Colorado</div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-label">Fee Schedule</div>
+      <div class="contact-detail-val">Available upon request</div>
+    </div>
+  </div>
+  <a href="mailto:drlauralwalsh@gmail.com?subject=Case%20inquiry%20for%20Dr.%20Walsh" class="btn-white">Email Dr. Walsh</a>
+  <a href="https://drlauralwalsh.com/s/Dr-Laura-L-Walsh-CV-Rev-02-26.pdf" download class="btn-outline-white">Download CV</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist · Trinidad, CO</span></div>
+  </div>
+  <ul class="footer-nav">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
+</footer>
+
+</body>
+</html>
