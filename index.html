@@ -89,7 +89,7 @@
   .hero {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     background: #1b2d4a;
     position: relative;
     overflow: hidden;
@@ -104,7 +104,7 @@
   }
   .hero-left {
     display: flex; flex-direction: column; justify-content: center;
-    padding: 8rem 5rem 6rem 4rem;
+    padding: 8rem 0.5rem 6rem 4rem;
     position: relative; z-index: 1;
   }
   .hero-eyebrow {
@@ -115,16 +115,18 @@
     text-transform: uppercase;
     color: var(--terra);
     margin-bottom: 1.8rem;
+    white-space: nowrap;
     opacity: 0;
     animation: fadeUp 0.7s 0.2s forwards;
   }
   .hero-name {
     font-family: var(--serif);
-    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-size: clamp(3.2rem, 5.5vw, 6.5rem);
     font-weight: 300;
     line-height: 1.0;
     color: var(--cream);
     margin-bottom: 1.5rem;
+    white-space: nowrap;
     opacity: 0;
     animation: fadeUp 0.8s 0.35s forwards;
   }
@@ -134,12 +136,12 @@
   }
   .hero-tagline {
     font-family: var(--serif);
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: 300;
     font-style: italic;
     color: var(--mist);
     line-height: 1.6;
-    max-width: 420px;
+    max-width: 100%;
     margin-bottom: 3rem;
     opacity: 0;
     animation: fadeUp 0.8s 0.5s forwards;
@@ -150,6 +152,7 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.65s forwards;
   }
+  .pill-break { flex-basis: 100%; height: 0; }
   .pill {
     font-size: 0.72rem;
     font-weight: 400;
@@ -196,11 +199,15 @@
 
   .hero-right {
     position: relative; z-index: 1;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; align-items: center; justify-content: flex-start;
+    padding: 0;
+    margin-left: -3rem;
   }
   .hero-photo-wrap {
     position: relative;
-    width: 340px; height: 420px;
+    width: 100%;
+    max-width: 300px;
+    height: 420px;
     opacity: 0;
     animation: fadeIn 1s 0.9s forwards;
   }
@@ -524,12 +531,9 @@
 
   /* ─── REFRAMED ────────────────────────────────────── */
   .reframed {
-    padding: 6rem 4rem;
+    padding: 8rem 4rem;
     background: var(--slate);
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 5rem;
-    align-items: center;
+    display: block;
     position: relative;
     overflow: hidden;
   }
@@ -568,7 +572,7 @@
     line-height: 1.85;
     color: var(--mist);
     margin-bottom: 2.5rem;
-    max-width: 440px;
+    max-width: 600px;
   }
   .reframed-quote {
     border-left: 2px solid var(--terra);
@@ -807,11 +811,12 @@
   <div class="topo-bg"></div>
   <div class="hero-left">
     <p class="hero-eyebrow">Expert Witness &nbsp;·&nbsp; AI Risk Consultant &nbsp;·&nbsp; Clinical Psychologist</p>
-    <h1 class="hero-name">Dr. Laura<br><em>L. Walsh</em></h1>
-    <p class="hero-tagline">Where forensic psychology, artificial intelligence, and two decades of clinical expertise converge.</p>
+    <h1 class="hero-name">Dr. Laura L. <em>Walsh</em></h1>
+    <p class="hero-tagline">Where forensic psychology, artificial intelligence, and<br>two decades of clinical expertise converge.</p>
     <div class="hero-pills">
       <span class="pill">Forensic Evaluation</span>
       <span class="pill">AI Suicide Risk</span>
+      <span class="pill-break"></span>
       <span class="pill">Expert Witness</span>
       <span class="pill">Adult Psychotherapy</span>
     </div>
@@ -939,14 +944,6 @@
     <p class="reframed-body">Reframing is the simple act that starts with a single question. Dr. Walsh's REFRAMED project doesn't tell you how to think differently — it shows you. Everything is a life lesson if you frame it that way.</p>
     <a href="https://reframedself.com" target="_blank" class="btn-light">Visit Reframedself.com →</a>
   </div>
-  <div class="reframed-visual">
-    <div class="reframed-card">
-      <p class="reframed-card-title">REFRAMED</p>
-      <p class="reframed-card-sub">A Project by Dr. Laura Walsh</p>
-      <p class="reframed-card-text">Practical wisdom, lived experience, and the science of perspective — delivered in a format that meets you where you are.</p>
-      <a href="https://reframedself.com" target="_blank" class="btn-light" style="font-size:0.72rem; padding:0.7rem 1.5rem;">Explore →</a>
-    </div>
-  </div>
 </section>
 
 <!-- CONTACT -->
@@ -965,7 +962,7 @@
       </div>
       <div class="contact-item">
         <span class="contact-item-label">Practice</span>
-        <span>Linebarger &amp; Associates</span>
+        <span>Walsh Psychology</span>
       </div>
       <div class="contact-item">
         <span class="contact-item-label">Portal</span>
