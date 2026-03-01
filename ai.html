@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Risk Consulting | Dr. Laura L. Walsh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate:  #1e2d3d;
+    --deep:   #111b26;
+    --terra:  #b85c38;
+    --sand:   #e8dcc8;
+    --cream:  #f5f0e8;
+    --mist:   #8fa3b1;
+    --white:  #fdfaf6;
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 4rem; background: rgba(253,250,246,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .nav-logo img { height: 38px; width: 38px; object-fit: cover; border-radius: 3px; }
+  .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; }
+  .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--terra); }
+  .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
+  .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
+
+  /* ─── PAGE HERO — DARK, TECHNICAL ────────────────── */
+  .page-hero { min-height: 60vh; background: var(--deep); display: flex; flex-direction: column; justify-content: flex-end; padding: 10rem 4rem 5rem; position: relative; overflow: hidden; }
+  .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 30%, rgba(184,92,56,0.08) 0%, transparent 60%), radial-gradient(ellipse 40% 50% at 10% 80%, rgba(143,163,177,0.05) 0%, transparent 50%); }
+  /* subtle grid pattern for tech feel */
+  .page-hero::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(143,163,177,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(143,163,177,0.04) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+  .hero-content { position: relative; z-index: 1; max-width: 800px; }
+  .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.2rem; }
+  .page-title { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; }
+  .page-title em { font-style: italic; color: var(--sand); }
+  .page-subtitle { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; font-style: italic; color: var(--mist); max-width: 650px; line-height: 1.6; margin-top: 1.5rem; }
+  .hero-statement { position: absolute; bottom: 5rem; right: 4rem; z-index: 1; max-width: 280px; text-align: right; }
+  .hero-statement p { font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: rgba(143,163,177,0.7); line-height: 1.5; }
+
+  /* ─── BREADCRUMB ──────────────────────────────────── */
+  .breadcrumb { background: var(--sand); padding: 0.9rem 4rem; display: flex; align-items: center; gap: 0.6rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--slate); }
+  .breadcrumb a { color: var(--terra); text-decoration: none; }
+  .breadcrumb-sep { color: var(--mist); }
+
+  /* ─── LAYOUT ──────────────────────────────────────── */
+  .content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 4rem; }
+  .section { padding: 5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .section:last-child { border-bottom: none; }
+  .section-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); display: block; margin-bottom: 0.75rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--slate); line-height: 1.15; margin-bottom: 1.8rem; }
+  .section-title em { font-style: italic; color: var(--terra); }
+  .section-body { font-size: 0.95rem; line-height: 1.9; color: #445566; max-width: 680px; margin-bottom: 1.5rem; }
+
+  /* ─── PROBLEM SECTION ─────────────────────────────── */
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .problem-callout { background: var(--slate); padding: 3rem; }
+  .problem-callout h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 300; color: var(--sand); margin-bottom: 1.5rem; line-height: 1.3; }
+  .failure-list { list-style: none; padding: 0; }
+  .failure-list li { display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.88rem; color: var(--mist); line-height: 1.6; }
+  .failure-list li:last-child { border-bottom: none; }
+  .failure-icon { color: var(--terra); font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+  /* ─── WHAT I DO ───────────────────────────────────── */
+  .states-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; margin-top: 2rem; }
+  .state-card { background: var(--cream); padding: 2rem 2.5rem; border-left: 3px solid transparent; transition: border-color 0.2s; }
+  .state-card:hover { border-left-color: var(--terra); }
+  .state-card h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; color: var(--slate); margin-bottom: 0.5rem; }
+  .state-card p { font-size: 0.87rem; line-height: 1.75; color: #556070; }
+
+  /* ─── SERVICES ────────────────────────────────────── */
+  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .service-card { background: var(--slate); padding: 3rem; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: transform 0.25s; }
+  .service-card:hover { transform: translateY(-2px); }
+  .service-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--terra); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-num { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; }
+  .service-card h3 { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--sand); margin-bottom: 1rem; line-height: 1.2; }
+  .service-card p { font-size: 0.87rem; line-height: 1.8; color: var(--mist); margin-bottom: 1.5rem; }
+  .service-card ul { padding-left: 1rem; margin-bottom: 1.5rem; }
+  .service-card li { font-size: 0.85rem; line-height: 1.75; color: var(--mist); margin-bottom: 0.35rem; }
+  .engagement-note { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(143,163,177,0.6); margin-top: auto; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.07); }
+
+  /* ─── DECISION GUIDE ──────────────────────────────── */
+  .decision-strip { background: var(--terra); padding: 5rem 4rem; }
+  .decision-strip .section-label { color: rgba(253,250,246,0.7); }
+  .decision-strip .section-title { color: var(--white); }
+  .decision-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .decision-card { background: rgba(0,0,0,0.15); padding: 2rem; }
+  .decision-if { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(253,250,246,0.6); margin-bottom: 0.5rem; }
+  .decision-cond { font-family: var(--serif); font-size: 1rem; color: var(--white); margin-bottom: 1rem; line-height: 1.4; }
+  .decision-then { font-size: 0.8rem; font-weight: 500; color: var(--sand); }
+
+  /* ─── CLOSING ARGUMENT ────────────────────────────── */
+  .closing { background: var(--deep); padding: 5rem 4rem; text-align: center; position: relative; overflow: hidden; }
+  .closing::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(143,163,177,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(143,163,177,0.03) 1px, transparent 1px); background-size: 60px 60px; }
+  .closing-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+  .closing h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; color: var(--white); margin-bottom: 1.5rem; line-height: 1.2; }
+  .closing h2 em { font-style: italic; color: var(--cream); }
+  .closing p { font-size: 0.95rem; color: var(--cream); line-height: 1.85; margin-bottom: 2.5rem; }
+  .btn-terra { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1.1rem 2.5rem; background: var(--white); color: var(--slate); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
+  .btn-terra:hover { background: var(--slate); color: var(--white); }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer { background: var(--deep); border-top: 1px solid rgba(143,163,177,0.1); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-logo { display: flex; align-items: center; gap: 0.75rem; }
+  .footer-logo img { height: 32px; width: 32px; object-fit: cover; border-radius: 3px; opacity: 0.8; }
+  .footer-logo-text { font-family: var(--serif); font-size: 0.9rem; color: var(--cream); }
+  .footer-logo-text span { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); opacity: 0.7; }
+  .footer-nav { list-style: none; display: flex; gap: 2rem; }
+  .footer-nav a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+  .footer-nav a:hover { opacity: 1; }
+  .footer-copy { font-size: 0.72rem; color: var(--mist); opacity: 0.5; }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .page-hero { padding: 8rem 1.5rem 4rem; }
+    .hero-statement { display: none; }
+    .breadcrumb { padding: 0.9rem 1.5rem; }
+    .content-wrap { padding: 0 1.5rem; }
+    .problem-grid, .services-grid { grid-template-columns: 1fr; }
+    .states-grid { grid-template-columns: 1fr; }
+    .decision-grid { grid-template-columns: 1fr 1fr; }
+    .decision-strip, .closing { padding: 4rem 1.5rem; }
+    footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html" class="active">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-content">
+    <p class="page-eyebrow">AI Risk Consulting &nbsp;·&nbsp; Suicide Risk &nbsp;·&nbsp; High-Risk Decision States</p>
+    <h1 class="page-title">LLMs read words.<br><em>Risk lies beyond them.</em></h1>
+    <p class="page-subtitle">AI systems can sound competent about suicide — while missing the risk entirely. Identifying where and why is exactly where I come in.</p>
+  </div>
+
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">·</span>
+  <span>AI Risk Consulting</span>
+</div>
+
+<div class="content-wrap">
+
+  <!-- THE PROBLEM -->
+  <section class="section" id="problem">
+    <span class="section-label">The Problem</span>
+    <h2 class="section-title">Most AI systems assess suicide risk<br><em>by analyzing what users say</em></h2>
+    <div class="problem-grid">
+      <div>
+        <p class="section-body">This approach is incomplete and leads to predictable failures. Keywords, sentiment analysis, and explicit ideation are not the same as risk. The most dangerous moments are often the least visible in language — especially in your system's real-world use.</p>
+        <p class="section-body">Dr. Walsh helps organizations identify where their AI systems mishandle suicide risk and high-risk decision states — especially the transition from thinking to action — so teams can reduce harm, improve safety, and avoid false confidence.</p>
+      </div>
+      <div class="problem-callout">
+        <h3>The predictable failures of keyword-based risk detection</h3>
+        <ul class="failure-list">
+          <li><span class="failure-icon">→</span>Missing high-risk users who are not expressing distress directly</li>
+          <li><span class="failure-icon">→</span>Overreacting to low-risk users who use the right words</li>
+          <li><span class="failure-icon">→</span>Providing responses misaligned with actual risk level</li>
+          <li><span class="failure-icon">→</span>False confidence that the system is performing safely</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I EVALUATE -->
+  <section class="section" id="approach">
+    <span class="section-label">What I Evaluate</span>
+    <h2 class="section-title">High-risk psychological states<br><em>your system may be misreading</em></h2>
+    <p class="section-body">The critical transition from thinking to action — and the states that precede it — require clinical expertise that goes beyond language pattern recognition.</p>
+    <div class="states-grid">
+      <div class="state-card">
+        <h3>Decision-State Transitions</h3>
+        <p>The shift from passive ideation to active planning is where risk escalates most rapidly — and where AI systems are most likely to miss it.</p>
+      </div>
+      <div class="state-card">
+        <h3>Collapse of Perceived Options</h3>
+        <p>When a person's perceived solution space narrows to one, the language may remain calm even as risk is peaking.</p>
+      </div>
+      <div class="state-card">
+        <h3>Temporal Narrowing</h3>
+        <p>Constriction of future-thinking is a clinical marker of acute risk that rarely surfaces in the vocabulary a system has been trained to detect.</p>
+      </div>
+      <div class="state-card">
+        <h3>Calm or Resolved States</h3>
+        <p>A sudden sense of peace or resolution can mask elevated risk — and will likely be scored as low-risk by any keyword-based system.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- SERVICES — DARK FULL WIDTH -->
+<section style="background:var(--deep);padding:5rem 0;" id="services">
+  <div class="content-wrap">
+    <span class="section-label" style="color:var(--terra);">Services</span>
+    <h2 class="section-title" style="color:var(--cream);">Practical, safety-focused consulting<br><em style="color:var(--sand);">for AI teams building in high-stakes spaces</em></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <h3>AI Risk Review</h3>
+        <p>Identify where your system misses high-risk users.</p>
+        <ul>
+          <li>Review of 25–50 interactions or scenarios</li>
+          <li>Identification of missed risk and false reassurance</li>
+          <li>Analysis of over/under escalation patterns</li>
+          <li>Clear, actionable recommendations</li>
+        </ul>
+        <div class="engagement-note">Fixed-scope review — 3–5 page report + optional consult call</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <h3>Failure Mode &amp; Red Teaming</h3>
+        <p>Find where your system breaks under real psychological conditions.</p>
+        <ul>
+          <li>Scenario-based stress testing — high-risk, ambiguous, edge-case</li>
+          <li>Identification of vulnerabilities and misclassification patterns</li>
+          <li>Examples of high-risk misses with clear explanations</li>
+          <li>Targeted recommendations to improve safety</li>
+        </ul>
+        <div class="engagement-note">Defined project scope tailored to your system</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <h3>Safety Design &amp; Advisory</h3>
+        <p>Improve how your system handles risk from the ground up.</p>
+        <ul>
+          <li>Response strategy and alignment</li>
+          <li>Escalation logic calibration — when to act, when not to</li>
+          <li>Reduction of false positives and false negatives</li>
+          <li>Design for real-world decision-state transitions</li>
+        </ul>
+        <div class="engagement-note">Project-based or ongoing advisory — flexible scope</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3>AI Harm &amp; Expert Review</h3>
+        <p>Analyze what went wrong — and why it matters.</p>
+        <ul>
+          <li>Transcript and system behavior analysis</li>
+          <li>Identification of missed or misinterpreted risk</li>
+          <li>Opinion on foreseeability and failure points</li>
+          <li>Consultation and expert testimony as needed</li>
+        </ul>
+        <div class="engagement-note">Case-based or hourly consultation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECISION GUIDE -->
+<section class="decision-strip">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label">How to Choose</span>
+    <h2 class="section-title">Match your situation<br>to the right engagement</h2>
+    <div class="decision-grid">
+      <div class="decision-card">
+        <div class="decision-if">If you have a</div>
+        <div class="decision-cond">New or early-stage system</div>
+        <div class="decision-then">→ Start with AI Risk Review</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-if">If you are</div>
+        <div class="decision-cond">Preparing to launch or scale</div>
+        <div class="decision-then">→ Failure Mode &amp; Red Teaming</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-if">If you are</div>
+        <div class="decision-cond">Already live and improving</div>
+        <div class="decision-then">→ Safety Design &amp; Advisory</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-if">If</div>
+        <div class="decision-cond">Something went wrong</div>
+        <div class="decision-then">→ AI Harm &amp; Expert Review</div>
+      </div>
+    </div>
+    <p style="margin-top:2rem;font-size:0.88rem;color:rgba(253,250,246,0.7);font-style:italic;">Not sure where to start? Your system likely has blind spots worth examining. <a href="mailto:drlauralwalsh@gmail.com?subject=AI%20Risk%20Consulting%20Inquiry" style="color:var(--white);text-decoration:underline;">Let's talk.</a></p>
+  </div>
+</section>
+
+<!-- PROMINENCE STATEMENT -->
+<section style="background:var(--deep);padding:5rem 4rem;text-align:center;">
+  <p style="font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.5rem);font-weight:300;color:var(--cream);line-height:1.6;max-width:800px;margin:0 auto;">If your system is interacting with real people in high-stakes moments, <em style="font-style:italic;color:var(--sand);">this is worth getting right.</em></p>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="closing-inner">
+    <div style="background:var(--terra);padding:3.5rem 4rem;max-width:650px;margin:0 auto;">
+      <h2>AI systems don't fail because<br><em>they lack information.</em></h2>
+      <p>They fail because they misread what matters.</p>
+      <a href="mailto:drlauralwalsh@gmail.com?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra">Request a Consult</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist · Trinidad, CO</span></div>
+  </div>
+  <ul class="footer-nav">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2025
