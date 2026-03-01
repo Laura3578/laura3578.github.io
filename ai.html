@@ -43,7 +43,7 @@
   .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.2rem; }
   .page-title { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; }
   .page-title em { font-style: italic; color: var(--sand); }
-  .page-subtitle { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; font-style: italic; color: var(--mist); max-width: 650px; line-height: 1.6; margin-top: 1.5rem; }
+  .page-subtitle { font-family: var(--serif); font-size: 1.2rem; font-weight: 300; font-style: italic; color: var(--mist); max-width: 600px; line-height: 1.7; }
   .hero-statement { position: absolute; bottom: 5rem; right: 4rem; z-index: 1; max-width: 280px; text-align: right; }
   .hero-statement p { font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: rgba(143,163,177,0.7); line-height: 1.5; }
 
@@ -104,11 +104,11 @@
   .closing { background: var(--deep); padding: 5rem 4rem; text-align: center; position: relative; overflow: hidden; }
   .closing::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(143,163,177,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(143,163,177,0.03) 1px, transparent 1px); background-size: 60px 60px; }
   .closing-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
-  .closing h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; color: var(--white); margin-bottom: 1.5rem; line-height: 1.2; }
-  .closing h2 em { font-style: italic; color: var(--cream); }
-  .closing p { font-size: 0.95rem; color: var(--cream); line-height: 1.85; margin-bottom: 2.5rem; }
-  .btn-terra { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1.1rem 2.5rem; background: var(--white); color: var(--slate); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
-  .btn-terra:hover { background: var(--slate); color: var(--white); }
+  .closing h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; color: var(--cream); margin-bottom: 1.5rem; line-height: 1.2; }
+  .closing h2 em { font-style: italic; color: var(--sand); }
+  .closing p { font-size: 0.95rem; color: var(--mist); line-height: 1.85; margin-bottom: 2.5rem; }
+  .btn-terra { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1.1rem 2.5rem; background: var(--terra); color: var(--white); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
+  .btn-terra:hover { background: #a04d2f; }
 
   /* ─── FOOTER ──────────────────────────────────────── */
   footer { background: var(--deep); border-top: 1px solid rgba(143,163,177,0.1); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
@@ -149,7 +149,7 @@
     <li><a href="ai.html" class="active">AI Consulting</a></li>
     <li><a href="therapy.html">Therapy</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
@@ -157,10 +157,12 @@
 <section class="page-hero">
   <div class="hero-content">
     <p class="page-eyebrow">AI Risk Consulting &nbsp;·&nbsp; Suicide Risk &nbsp;·&nbsp; High-Risk Decision States</p>
-    <h1 class="page-title">LLMs read words.<br><em>Risk lies beyond them.</em></h1>
-    <p class="page-subtitle">AI systems can sound competent about suicide — while missing the risk entirely. Identifying where and why is exactly where I come in.</p>
+    <h1 class="page-title">LLMs read words.<br><em>Risk lives beyond them.</em></h1>
+    <p class="page-subtitle">AI systems can sound competent about suicide — while missing the risk entirely. Identifying where and why is the work.</p>
   </div>
-
+  <div class="hero-statement">
+    <p>"The most dangerous moments are often the least visible in language."</p>
+  </div>
 </section>
 
 <!-- BREADCRUMB -->
@@ -305,23 +307,15 @@
         <div class="decision-then">→ AI Harm &amp; Expert Review</div>
       </div>
     </div>
-    <p style="margin-top:2rem;font-size:0.88rem;color:rgba(253,250,246,0.7);font-style:italic;">Not sure where to start? Your system likely has blind spots worth examining. <a href="mailto:drlauralwalsh@gmail.com?subject=AI%20Risk%20Consulting%20Inquiry" style="color:var(--white);text-decoration:underline;">Let's talk.</a></p>
   </div>
-</section>
-
-<!-- PROMINENCE STATEMENT -->
-<section style="background:var(--deep);padding:5rem 4rem;text-align:center;">
-  <p style="font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.5rem);font-weight:300;color:var(--cream);line-height:1.6;max-width:800px;margin:0 auto;">If your system is interacting with real people in high-stakes moments, <em style="font-style:italic;color:var(--sand);">this is worth getting right.</em></p>
 </section>
 
 <!-- CLOSING -->
 <section class="closing">
   <div class="closing-inner">
-    <div style="background:var(--terra);padding:3.5rem 4rem;max-width:650px;margin:0 auto;">
-      <h2>AI systems don't fail because<br><em>they lack information.</em></h2>
-      <p>They fail because they misread what matters.</p>
-      <a href="mailto:drlauralwalsh@gmail.com?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra">Request a Consult</a>
-    </div>
+    <h2>AI systems don't fail because<br><em>they lack information.</em></h2>
+    <p>They fail because they misread what matters. If your system is interacting with real people in high-stakes moments, this is worth getting right. Let's talk about where your blind spots might be.</p>
+    <a href="mailto:drlauralwalsh@gmail.com?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra">Request a Consult</a>
   </div>
 </section>
 
@@ -336,6 +330,10 @@
     <li><a href="ai.html">AI Consulting</a></li>
     <li><a href="therapy.html">Therapy</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p class="footer-copy">© 2025
+  <p class="footer-copy">© 2025 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
+</footer>
+
+</body>
+</html>
