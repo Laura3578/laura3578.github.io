@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Dr. Laura L. Walsh | Clinical Psychologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate:  #1e2d3d;
+    --deep:   #111b26;
+    --terra:  #b85c38;
+    --sand:   #e8dcc8;
+    --cream:  #f5f0e8;
+    --mist:   #8fa3b1;
+    --white:  #fdfaf6;
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 4rem; background: rgba(253,250,246,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .nav-logo img { height: 38px; width: 38px; object-fit: cover; border-radius: 3px; }
+  .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; }
+  .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--terra); }
+  .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
+  .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
+
+  /* ─── HERO ────────────────────────────────────────── */
+  .page-hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #1b2d4a;
+    position: relative;
+    overflow: hidden;
+  }
+  .topo-bg { position: absolute; inset: 0; pointer-events: none; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Cellipse cx='420' cy='320' rx='80' ry='65'/%3E%3Cellipse cx='420' cy='320' rx='130' ry='108'/%3E%3Cellipse cx='420' cy='320' rx='180' ry='155'/%3E%3Cellipse cx='420' cy='320' rx='235' ry='205'/%3E%3Cellipse cx='420' cy='320' rx='295' ry='258'/%3E%3Cellipse cx='420' cy='320' rx='360' ry='315'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; }
+  .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 20% 60%, rgba(184,92,56,0.10) 0%, transparent 65%); }
+  .hero-left {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 10rem 3rem 6rem 4rem;
+    position: relative; z-index: 1;
+  }
+  .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.5rem; }
+  .page-title { font-family: var(--serif); font-size: clamp(3rem, 5vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; white-space: nowrap; }
+  .page-title em { font-style: italic; color: var(--sand); }
+  .hero-bio { font-family: var(--serif); font-size: 1.15rem; font-weight: 300; font-style: italic; color: var(--mist); line-height: 1.75; max-width: 480px; margin-bottom: 3rem; }
+  .hero-roles { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .role-pill { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1rem; border: 1px solid rgba(232,220,200,0.25); color: var(--sand); border-radius: 2px; }
+  .hero-right { position: relative; z-index: 1; }
+  .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+
+  /* ─── BREADCRUMB ──────────────────────────────────── */
+  .breadcrumb { background: var(--sand); padding: 0.9rem 4rem; display: flex; align-items: center; gap: 0.6rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--slate); }
+  .breadcrumb a { color: var(--terra); text-decoration: none; }
+  .breadcrumb-sep { color: var(--mist); }
+
+  /* ─── LAYOUT ──────────────────────────────────────── */
+  .content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 4rem; }
+  .section { padding: 5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .section:last-child { border-bottom: none; }
+  .section-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); display: block; margin-bottom: 0.75rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--slate); line-height: 1.15; margin-bottom: 1.8rem; }
+  .section-title em { font-style: italic; color: var(--terra); }
+  .section-body { font-size: 0.95rem; line-height: 1.9; color: #445566; max-width: 680px; margin-bottom: 1.5rem; }
+
+  /* ─── BIO SECTION ─────────────────────────────────── */
+  .bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+  .bio-pull { font-family: var(--serif); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 300; font-style: italic; color: var(--slate); line-height: 1.5; border-left: 3px solid var(--terra); padding-left: 2rem; margin-bottom: 2rem; }
+  .bio-detail { font-size: 0.85rem; line-height: 1.8; color: var(--mist); margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(30,45,61,0.08); }
+
+  /* ─── APPROACH ────────────────────────────────────── */
+  .approach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 3rem; }
+  .approach-card { background: var(--cream); padding: 2.5rem; position: relative; overflow: hidden; transition: transform 0.25s; }
+  .approach-card:hover { transform: translateY(-2px); }
+  .approach-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--terra); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+  .approach-card:hover::after { transform: scaleX(1); }
+  .approach-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--slate); margin-bottom: 0.75rem; }
+  .approach-card p { font-size: 0.88rem; line-height: 1.8; color: #556070; }
+  .approach-num { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 1rem; }
+
+  /* ─── REFRAMED ────────────────────────────────────── */
+  .reframed { background: var(--slate); padding: 6rem 4rem; }
+  .reframed-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+  .reframed-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); display: block; margin-bottom: 0.75rem; }
+  .reframed-title { font-family: var(--serif); font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 1.5rem; }
+  .reframed-title em { font-style: italic; color: var(--sand); }
+  .reframed-body { font-size: 0.92rem; line-height: 1.85; color: var(--mist); margin-bottom: 2rem; }
+  .btn-light { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.2rem; border: 1.5px solid rgba(232,220,200,0.35); color: var(--sand); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
+  .btn-light:hover { border-color: var(--sand); color: var(--white); }
+  .reframed-quote { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; font-style: italic; color: var(--sand); line-height: 1.4; }
+
+  /* ─── WRITING & SPEAKING ──────────────────────────── */
+  .speaking-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 6rem; align-items: center; }
+  .speaking-items { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; }
+  .speaking-item { padding: 1.5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); display: flex; gap: 1.5rem; align-items: flex-start; }
+  .speaking-item:last-child { border-bottom: none; }
+  .speaking-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--terra); flex-shrink: 0; margin-top: 0.45rem; }
+  .speaking-item p { font-size: 0.9rem; line-height: 1.7; color: #445566; }
+  .speaking-cta { background: var(--slate); padding: 3rem; }
+  .speaking-cta h3 { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--cream); margin-bottom: 1rem; }
+  .speaking-cta p { font-size: 0.88rem; line-height: 1.8; color: var(--mist); margin-bottom: 2rem; }
+  .btn-terra { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2.2rem; background: var(--terra); color: var(--white); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
+  .btn-terra:hover { background: #a04d2f; }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer { background: var(--deep); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-logo { display: flex; align-items: center; gap: 0.75rem; }
+  .footer-logo img { height: 32px; width: 32px; object-fit: cover; border-radius: 3px; opacity: 0.8; }
+  .footer-logo-text { font-family: var(--serif); font-size: 0.9rem; color: var(--cream); }
+  .footer-logo-text span { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); opacity: 0.7; }
+  .footer-nav { list-style: none; display: flex; gap: 2rem; }
+  .footer-nav a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+  .footer-nav a:hover { opacity: 1; }
+  .footer-copy { font-size: 0.72rem; color: var(--mist); opacity: 0.5; }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .page-hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 8rem 1.5rem 4rem; }
+    .hero-right { height: 400px; }
+    .breadcrumb { padding: 0.9rem 1.5rem; }
+    .content-wrap { padding: 0 1.5rem; }
+    .bio-grid, .speaking-grid, .reframed-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .approach-grid { grid-template-columns: 1fr; }
+    .reframed { padding: 4rem 1.5rem; }
+    footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="topo-bg"></div>
+  <div class="hero-left">
+    <p class="page-eyebrow">About</p>
+    <h1 class="page-title">Dr. Laura L. <em>Walsh</em></h1>
+    <p class="hero-bio">A licensed clinical psychologist who has never been satisfied with a surface answer. Complex interactions and connections are what capture and hold my attention — which is why people and their lives turn out to be so endlessly interesting.</p>
+    <div class="hero-roles">
+      <span class="role-pill">Clinical Psychologist</span>
+      <span class="role-pill">Expert Witness</span>
+      <span class="role-pill">AI Risk Consultant</span>
+      <span class="role-pill">Author &amp; Speaker</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="laura_photo2.png" alt="Dr. Laura L. Walsh">
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">·</span>
+  <span>About Dr. Walsh</span>
+</div>
+
+<div class="content-wrap">
+
+  <!-- BIO -->
+  <section class="section" id="bio">
+    <div class="bio-grid">
+      <div>
+        <span class="section-label">Background</span>
+        <h2 class="section-title">A career built at the<br><em>edges of the discipline</em></h2>
+        <p class="section-body">Dr. Laura L. Walsh is a licensed clinical psychologist practicing in the mountains of Trinidad, Colorado. Over two decades she has cultivated a practice that refuses to stay in one lane — bridging the consulting room, the courtroom, and the frontier of AI safety.</p>
+        <p class="section-body">My father was an engineer, and from him I learned to approach complexity with patience and precision. Even when life feels overwhelming, we can slow down and look carefully at each layer until something new emerges — clarity, movement, or a sense of ease. That instinct runs through everything I do, whether I'm in session with a client, reviewing records for a deposition, or evaluating how an AI system misreads risk.</p>
+        <p class="section-body">I'm a native southerner who called Chicago home for years before finding my true place in the mountains of Colorado. I hold a BA in Psychology with a minor in Philosophy from Texas State University and a Doctorate in Clinical Psychology from the Illinois School of Professional Psychology. I'm a published author, speaker, and former adjunct faculty member at multiple clinical psychology training programs.</p>
+        <div class="bio-detail">Licensed in Colorado (#PSY.0006327) and Illinois (#071009203) &nbsp;·&nbsp; <a href="https://drlauralwalsh.com/s/Dr-Laura-L-Walsh-CV-Rev-02-26.pdf" download style="color:var(--terra);text-decoration:none;">Download CV →</a></div>
+      </div>
+      <div>
+        <p class="bio-pull">"Being curious and asking why is a defining quality of mine. I was never satisfied with a surface answer."</p>
+        <p class="section-body">My current clinical interests include suicide loss bereavement, ADHD symptom management, LGBTQ+ and kink/poly relationships, and substance and behavioral addictions. On the forensic side, I focus on civil and employment matters — psychological injury, ADHD accommodations, wrongful death, and suicide-related questions. And at the frontier: helping AI teams understand where their systems fail to recognize risk in the people who need help most.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINICAL APPROACH -->
+  <section class="section" id="approach">
+    <span class="section-label">Clinical Approach &amp; Influences</span>
+    <h2 class="section-title">The thinking behind<br><em>the work</em></h2>
+    <p class="section-body">My clinical approach is informed by models that share a respect for human complexity, compassion, and growth. I'm an active and authentic presence in sessions — validating what's real, empowering you to see the whole picture, and never pretending to have ready-made answers.</p>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Self Psychology</h3>
+        <p>A framework centered on empathy, the cohesive sense of self, and the ways early relationships shape how we experience ourselves and others throughout life.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Internal Family Systems</h3>
+        <p>A model that understands the mind as made up of distinct parts — each with its own perspective and protective function — and the healing that comes from relating to them with curiosity rather than judgment.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Narrative Therapy</h3>
+        <p>The stories we tell about ourselves shape who we become. Narrative therapy creates space to examine those stories, separate the person from the problem, and author new ones.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Gottman Method</h3>
+        <p>Research-based approaches to relationships — helping couples and individuals understand patterns of connection, conflict, and repair with clarity and without blame.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Forensic Psychology</h3>
+        <p>Grounded in the Specialty Guidelines for Forensic Psychology — applying clinical expertise to legal questions with rigorous, data-driven methodology and clear, accessible reporting.</p>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">Influence</div>
+        <h3>Engineering Mindset</h3>
+        <p>From an engineer father: the instinct to slow down, examine each layer, and resist the urge to accept the first explanation. Complexity has structure if you're patient enough to look.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- REFRAMED -->
+<section class="reframed">
+  <div class="reframed-inner">
+    <div>
+      <span class="reframed-label">Featured Project</span>
+      <h2 class="reframed-title"><em>REFRAMED</em></h2>
+      <p class="reframed-body">Reframing is the simple act that starts with a single question. REFRAMED is Dr. Walsh's ongoing project exploring the science and practice of perspective — practical wisdom, lived experience, and the belief that everything is a life lesson if you frame it that way.</p>
+      <p class="reframed-body">If you want to read more about her philosophy and approach to life and change, this is the place to start.</p>
+      <a href="https://reframedself.com" target="_blank" class="btn-light">Visit Reframedself.com →</a>
+    </div>
+    <div>
+      <p class="reframed-quote">"When you're feeling stuck, there's always another way. We'll figure it out."</p>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- WRITING & SPEAKING -->
+  <section class="section" id="speaking">
+    <div class="speaking-grid">
+      <div>
+        <span class="section-label">Writing &amp; Speaking</span>
+        <h2 class="section-title">Beyond the<br><em>consulting room</em></h2>
+        <p class="section-body">Dr. Walsh brings the same rigor and clarity she applies in clinical and forensic work to her writing and speaking engagements — translating complex psychological concepts for professional and general audiences alike.</p>
+        <div class="speaking-items">
+          <div class="speaking-item">
+            <span class="speaking-dot"></span>
+            <p>Published author and contributor on topics spanning clinical psychology, suicide risk, AI safety, and the psychology of everyday life</p>
+          </div>
+          <div class="speaking-item">
+            <span class="speaking-dot"></span>
+            <p>Speaker and presenter at professional conferences and public events on forensic psychology, suicide bereavement, and ADHD</p>
+          </div>
+          <div class="speaking-item">
+            <span class="speaking-dot"></span>
+            <p>Former adjunct faculty at multiple APA-accredited clinical psychology training programs</p>
+          </div>
+          <div class="speaking-item">
+            <span class="speaking-dot"></span>
+            <p>Available for media commentary, expert interviews, and educational presentations on psychology, AI risk, and forensic topics</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaking-cta">
+        <h3>Interested in a speaking engagement or media inquiry?</h3>
+        <p>Dr. Walsh is available for conferences, professional trainings, podcast appearances, and media commentary. Reach out to discuss availability and topics.</p>
+        <a href="mailto:drlauralwalsh@gmail.com?subject=Speaking%20%2F%20Media%20Inquiry" class="btn-terra">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist · Trinidad, CO</span></div>
+  </div>
+  <ul class="footer-nav">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
+</footer>
+
+</body>
+</html>
