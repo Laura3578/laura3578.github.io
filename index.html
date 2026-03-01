@@ -355,7 +355,7 @@
   /* ─── FEATURED SERVICES ──────────────────────────── */
   .services-featured {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2px;
   }
   .service-card-featured {
@@ -799,10 +799,11 @@
     <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#reframed">Reframed</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <li><a href="forensic.html">Expert Witness</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Psychotherapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
@@ -821,7 +822,8 @@
       <span class="pill">Adult Psychotherapy</span>
     </div>
     <div class="hero-btns">
-      <a href="forensic.html" class="btn-primary">For Attorneys &amp; Organizations</a>
+      <a href="forensic.html" class="btn-primary">For Attorneys</a>
+      <a href="ai.html" class="btn-primary">For Organizations</a>
       <a href="therapy.html" class="btn-outline">For Individuals</a>
     </div>
   </div>
@@ -833,7 +835,7 @@
   <div class="hero-location">Trinidad, Colorado</div>
 </section>
 
-<!-- SERVICES — FEATURED: FORENSIC + AI -->
+<!-- SERVICES — THREE EQUAL BOXES -->
 <section class="services" id="services">
   <div class="section-header">
     <span class="section-label">Specialized Practice</span>
@@ -841,64 +843,56 @@
   </div>
   <h2 class="section-title">Rare expertise at the<br><em>intersection of mind, law &amp; technology</em></h2>
 
-  <!-- Featured two-up: Forensic + AI -->
-  <div id="forensic" class="services-featured">
+  <div class="services-featured">
 
-    <a href="#" class="service-card-featured">
+    <a href="forensic.html" class="service-card-featured">
       <div class="sfeat-label">01</div>
       <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:1.5rem;color:var(--terra)">
         <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
       </svg>
       <h3>Expert Witness &amp;<br>Forensic Consultation</h3>
-      <p>Dr. Walsh provides rigorous psychological expertise for civil and criminal legal proceedings — including forensic evaluations, suicide risk assessment, and attorney consultation on complex mental health matters. Her testimony is grounded in two decades of clinical practice and evidence-based methodology.</p>
+      <p>Rigorous psychological expertise for civil and employment legal proceedings — including forensic evaluations, suicide risk assessment, and attorney consultation on complex mental health matters.</p>
       <div class="sfeat-tags">
-        <span>Suicide Risk Assessment</span>
         <span>Forensic Evaluation</span>
-        <span>Civil &amp; Criminal Cases</span>
+        <span>Suicide Risk</span>
+        <span>Expert Witness</span>
         <span>Attorney Consultation</span>
       </div>
       <span class="service-link" style="margin-top:auto;">For Attorneys →</span>
     </a>
 
-    <a href="#" class="service-card-featured service-card-featured--ai">
+    <a href="ai.html" class="service-card-featured service-card-featured--ai">
       <div class="sfeat-label">02</div>
       <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:1.5rem;color:var(--terra)">
         <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
       </svg>
-      <h3>AI Risk Consulting</h3>
-      <p>At the frontier of AI safety, Dr. Walsh consults with technology organizations on suicide risk and high-risk decision states in AI systems. She helps teams build evidence-based safeguards, evaluate model outputs for harm potential, and navigate the psychological dimensions of AI deployment at scale.</p>
+      <h3>AI Suicide Risk Consulting</h3>
+      <p>Helping technology organizations identify where their AI systems misread or miss suicide risk and high-risk decision states — so teams can build safer products with genuine clinical grounding.</p>
       <div class="sfeat-tags">
         <span>AI Suicide Risk</span>
         <span>High-Risk Decision States</span>
-        <span>Safety Protocols</span>
-        <span>Model Evaluation</span>
+        <span>Red Teaming</span>
+        <span>Safety Design</span>
       </div>
-      <span class="service-link" style="margin-top:auto;"><a href="ai.html" style="color:var(--terra);text-decoration:none;">For Organizations →</a></span>
+      <span class="service-link" style="margin-top:auto;">For Organizations →</span>
     </a>
 
-  </div>
-</section>
+    <a href="therapy.html" class="service-card-featured">
+      <div class="sfeat-label">03</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;margin-bottom:1.5rem;color:var(--terra)">
+        <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+      </svg>
+      <h3>Adult Psychotherapy</h3>
+      <p>Boutique telehealth for adults, couples, and alternative families across Colorado. Practical, active, and authentic — helping people become the changemakers in their own lives.</p>
+      <div class="sfeat-tags">
+        <span>Adult ADHD</span>
+        <span>Grief &amp; Suicide Loss</span>
+        <span>Trauma &amp; Attachment</span>
+        <span>Relationships</span>
+      </div>
+      <span class="service-link" style="margin-top:auto;">For Individuals →</span>
+    </a>
 
-<!-- THERAPY STRIP -->
-<section class="therapy-strip" id="therapy">
-  <div class="therapy-left">
-    <span class="section-label" style="color:var(--terra);font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;">03 — Psychotherapy</span>
-    <h2 style="font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--slate);line-height:1.15;margin:1rem 0 1.5rem;">Adult Psychotherapy<br><em style="font-style:italic;color:var(--terra);">Boutique telehealth, Colorado</em></h2>
-    <p style="font-size:0.92rem;line-height:1.85;color:#556070;max-width:480px;">A boutique telehealth private practice for adults across Colorado. Dr. Walsh brings the same rigor she applies in the courtroom and consulting room to individual therapy — creating space for genuine transformation in ADHD, grief, addiction, and LGBTQ+ concerns.</p>
-  </div>
-  <div class="therapy-right">
-    <div class="therapy-specialties">
-      <div class="therapy-spec"><span class="spec-dot"></span>Adult ADHD</div>
-      <div class="therapy-spec"><span class="spec-dot"></span>Grief &amp; Suicide Loss</div>
-      <div class="therapy-spec"><span class="spec-dot"></span>LGBTQ+ Issues</div>
-      <div class="therapy-spec"><span class="spec-dot"></span>Behavioral Addictions</div>
-      <div class="therapy-spec"><span class="spec-dot"></span>Substance Addictions</div>
-      <div class="therapy-spec"><span class="spec-dot"></span>Trauma &amp; Loss</div>
-    </div>
-    <div style="display:flex;gap:1rem;margin-top:2.5rem;flex-wrap:wrap;">
-      <a href="#contact" class="btn-primary">Begin Therapy</a>
-      <a href="https://linebargerandassociates.clientsecure.me" target="_blank" class="btn-secondary">Client Portal →</a>
-    </div>
   </div>
 </section>
 
@@ -954,54 +948,46 @@
       <div class="section-rule"></div>
     </div>
     <h2 class="contact-title">Let's start a<br><em>conversation</em></h2>
-    <p class="contact-body">Whether you're an attorney seeking expert consultation, an organization navigating AI risk, or an individual ready to begin therapy — reach out and let's talk.</p>
+    <p class="contact-body">The first step is simply reaching out. Choose the path that fits your reason for being here.</p>
     <div class="contact-info">
       <div class="contact-item">
-        <span class="contact-item-label">Location</span>
-        <span>Trinidad, Colorado (Telehealth statewide)</span>
+        <span class="contact-item-label">Email</span>
+        <span><a href="/cdn-cgi/l/email-protection#6206100e031710030e15030e110a22050f030b0e4c010d0f" style="color:var(--terra);text-decoration:none;"><span class="__cf_email__" data-cfemail="f89c8a94998d8a99948f99948b90b89f95999194d69b9795">[email&#160;protected]</span></a></span>
       </div>
       <div class="contact-item">
-        <span class="contact-item-label">Practice</span>
-        <span>Walsh Psychology</span>
+        <span class="contact-item-label">Phone</span>
+        <span><a href="tel:7205155681" style="color:var(--terra);text-decoration:none;">720-515-5681</a></span>
       </div>
       <div class="contact-item">
-        <span class="contact-item-label">Portal</span>
-        <span><a href="https://linebargerandassociates.clientsecure.me" target="_blank" style="color:var(--terra); text-decoration:none;">Client Secure Portal →</a></span>
+        <span class="contact-item-label">Home Base</span>
+        <span>In the beautiful mountains of Trinidad, Colorado</span>
       </div>
     </div>
   </div>
-  <form class="contact-form" onsubmit="return false;">
-    <div class="form-row">
-      <div class="form-group">
-        <label>First Name</label>
-        <input type="text" placeholder="Laura">
-      </div>
-      <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" placeholder="Walsh">
-      </div>
+  <div style="display:flex;flex-direction:column;gap:0;">
+
+    <div style="padding:2.5rem 0;border-bottom:1px solid rgba(30,45,61,0.1);">
+      <div style="font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--terra);margin-bottom:0.5rem;">Psychotherapy</div>
+      <h3 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--slate);margin-bottom:0.5rem;">New Client Inquiry</h3>
+      <p style="font-size:0.88rem;line-height:1.75;color:#667788;margin-bottom:1rem;">Telehealth for adults, couples, and alternative families across Colorado. Private pay with limited sliding scale.</p>
+      <a href="https://linebargerandassociates.clientsecure.me" target="_blank" class="btn-primary" style="font-size:0.75rem;padding:0.75rem 1.8rem;">Client Portal →</a>
     </div>
-    <div class="form-group">
-      <label>Email Address</label>
-      <input type="email" placeholder="hello@example.com">
+
+    <div style="padding:2.5rem 0;border-bottom:1px solid rgba(30,45,61,0.1);">
+      <div style="font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--terra);margin-bottom:0.5rem;">Forensic &amp; AI Consulting</div>
+      <h3 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--slate);margin-bottom:0.5rem;">Attorney &amp; Organizational Inquiries</h3>
+      <p style="font-size:0.88rem;line-height:1.75;color:#667788;margin-bottom:1rem;">Expert witness, consultation, and AI risk services. Please include a brief description of your matter and timeline.</p>
+      <a href="/cdn-cgi/l/email-protection#fe9a8c929f8b8c9f92899f928d96be99939f9792d09d9193c18d8b9c949b9d8ac3b8918c9b908d979ddbcccedbccb8dbcccebfb7dbcccebd91908d8b928a979099dbccceb7908f8b978c87" class="btn-primary" style="font-size:0.75rem;padding:0.75rem 1.8rem;">Email Dr. Walsh →</a>
     </div>
-    <div class="form-group">
-      <label>I'm reaching out about</label>
-      <select>
-        <option value="">Select a service</option>
-        <option>Expert Witness / Forensic Consultation</option>
-        <option>AI Risk Consulting</option>
-        <option>Adult Psychotherapy</option>
-        <option>Speaking / Media Inquiry</option>
-        <option>Other</option>
-      </select>
+
+    <div style="padding:2.5rem 0;">
+      <div style="font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--terra);margin-bottom:0.5rem;">Writing, Speaking &amp; Media</div>
+      <h3 style="font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--slate);margin-bottom:0.5rem;">Engagements &amp; Press</h3>
+      <p style="font-size:0.88rem;line-height:1.75;color:#667788;margin-bottom:1rem;">Speaking, writing, podcasts, and media commentary on psychology, forensic topics, and AI risk.</p>
+      <a href="/cdn-cgi/l/email-protection#7b1f09171a0e091a170c1a1708133b1c161a12175518141644080e19111e180f46280b1e1a1012151c5e494b5e493d5e494b361e1f121a5e494b32150a0e120902" class="btn-primary" style="font-size:0.75rem;padding:0.75rem 1.8rem;">Send a Message →</a>
     </div>
-    <div class="form-group">
-      <label>Message</label>
-      <textarea placeholder="Tell me a bit about what you're looking for…"></textarea>
-    </div>
-    <button type="submit" class="form-submit">Send Message</button>
-  </form>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -1011,13 +997,4 @@
     <div><strong>Dr. Laura L. Walsh</strong><br><span style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mist);opacity:0.6;">Clinical Psychologist · Trinidad, CO</span></div>
   </div>
   <ul class="footer-nav">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="https://reframedself.com" target="_blank">Reframed</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <p class="footer-copy">© 2025 Dr. Laura L. Walsh &nbsp;·&nbsp; Trinidad, CO</p>
-</footer>
-
-</body>
-</html>
+    <li><a href="forensic.html"
