@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Dr. Laura L. Walsh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate:  #1e2d3d;
+    --deep:   #111b26;
+    --terra:  #b85c38;
+    --sand:   #e8dcc8;
+    --cream:  #f5f0e8;
+    --mist:   #8fa3b1;
+    --white:  #fdfaf6;
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 4rem; background: rgba(253,250,246,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(30,45,61,0.08); }
+  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .nav-logo img { height: 38px; width: 38px; object-fit: cover; border-radius: 3px; }
+  .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; }
+  .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--terra); }
+  .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
+  .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
+
+  /* ─── MAIN LAYOUT ─────────────────────────────────── */
+  .contact-wrap { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
+
+  /* ─── LEFT ────────────────────────────────────────── */
+  .left { background: #1b2d4a; padding: 12rem 5rem 6rem; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }
+  .topo-bg { position: absolute; inset: 0; pointer-events: none; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Cellipse cx='420' cy='320' rx='80' ry='65'/%3E%3Cellipse cx='420' cy='320' rx='130' ry='108'/%3E%3Cellipse cx='420' cy='320' rx='180' ry='155'/%3E%3Cellipse cx='420' cy='320' rx='235' ry='205'/%3E%3Cellipse cx='420' cy='320' rx='295' ry='258'/%3E%3Cellipse cx='420' cy='320' rx='360' ry='315'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; }
+  .left-content { position: relative; z-index: 1; }
+  .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.5rem; }
+  .page-title { font-family: var(--serif); font-size: clamp(3rem, 4.5vw, 5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 3rem; }
+  .page-title em { font-style: italic; color: var(--sand); }
+  .contact-details { display: flex; flex-direction: column; gap: 1.8rem; }
+  .contact-item-label { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(143,163,177,0.6); margin-bottom: 0.2rem; }
+  .contact-item-value { font-size: 0.95rem; color: var(--cream); line-height: 1.5; }
+  .contact-item-value a { color: var(--sand); text-decoration: none; border-bottom: 1px solid rgba(232,220,200,0.25); transition: border-color 0.2s; }
+  .contact-item-value a:hover { border-color: var(--sand); }
+
+  /* ─── RIGHT ───────────────────────────────────────── */
+  .right { background: var(--cream); padding: 12rem 5rem 6rem; display: flex; flex-direction: column; justify-content: center; gap: 3rem; }
+  .path { border-bottom: 1px solid rgba(30,45,61,0.1); padding-bottom: 2.5rem; }
+  .path:last-child { border-bottom: none; padding-bottom: 0; }
+  .path-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.5rem; }
+  .path h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--slate); margin-bottom: 0.6rem; }
+  .path p { font-size: 0.88rem; line-height: 1.75; color: #667788; margin-bottom: 1.2rem; }
+  .btn-terra { display: inline-block; font-family: var(--sans); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.8rem; background: var(--terra); color: var(--white); text-decoration: none; border-radius: 2px; transition: background 0.25s; }
+  .btn-terra:hover { background: #a04d2f; }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer { background: var(--deep); padding: 2.5rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-logo { display: flex; align-items: center; gap: 0.75rem; }
+  .footer-logo img { height: 30px; width: 30px; object-fit: cover; border-radius: 3px; opacity: 0.8; }
+  .footer-logo-text { font-family: var(--serif); font-size: 0.9rem; color: var(--cream); }
+  .footer-logo-text span { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); opacity: 0.7; }
+  .footer-nav { list-style: none; display: flex; gap: 2rem; }
+  .footer-nav a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+  .footer-nav a:hover { opacity: 1; }
+  .footer-copy { font-size: 0.72rem; color: var(--mist); opacity: 0.5; }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .contact-wrap { grid-template-columns: 1fr; }
+    .left, .right { padding: 7rem 1.5rem 4rem; }
+    footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="contact-wrap">
+
+  <!-- LEFT — details -->
+  <div class="left">
+    <div class="topo-bg"></div>
+    <div class="left-content">
+      <p class="page-eyebrow">Get in Touch</p>
+      <h1 class="page-title">Let's start<br><em>a conversation</em></h1>
+      <div class="contact-details">
+        <div>
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value"><a href="mailto:drlauralwalsh@gmail.com">drlauralwalsh@gmail.com</a></div>
+        </div>
+        <div>
+          <div class="contact-item-label">Phone</div>
+          <div class="contact-item-value"><a href="tel:7205155681">720-515-5681</a></div>
+        </div>
+        <div>
+          <div class="contact-item-label">Home Base</div>
+          <div class="contact-item-value">In the beautiful mountains of<br>Trinidad, Colorado</div>
+        </div>
+        <div>
+          <div class="contact-item-label">Client Portal</div>
+          <div class="contact-item-value"><a href="https://linebargerandassociates.clientsecure.me" target="_blank">SimplePractice →</a></div>
+        </div>
+        <div>
+          <div class="contact-item-label">CV</div>
+          <div class="contact-item-value"><a href="https://drlauralwalsh.com/s/Dr-Laura-L-Walsh-CV-Rev-02-26.pdf" target="_blank">Download →</a></div>
+        </div>
+        <div>
+          <div class="contact-item-label">REFRAMED</div>
+          <div class="contact-item-value"><a href="https://reframedself.com" target="_blank">reframedself.com →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT — paths -->
+  <div class="right">
+
+    <div class="path">
+      <div class="path-label">Psychotherapy</div>
+      <h2>New Client Inquiry</h2>
+      <p>Telehealth for adults, couples, and alternative families across Colorado. Private pay with limited sliding scale. Superbills provided.</p>
+      <a href="https://linebargerandassociates.clientsecure.me" target="_blank" class="btn-terra">Start in the Client Portal →</a>
+    </div>
+
+    <div class="path">
+      <div class="path-label">Forensic &amp; AI Consulting</div>
+      <h2>Attorney &amp; Organizational Inquiries</h2>
+      <p>Expert witness, consultation, and AI risk services. Please include a brief description of your matter and timeline.</p>
+      <a href="mailto:drlauralwalsh@gmail.com?subject=Forensic%20%2F%20AI%20Consulting%20Inquiry" class="btn-terra">Email Dr. Walsh →</a>
+    </div>
+
+    <div class="path">
+      <div class="path-label">Writing, Speaking &amp; Media</div>
+      <h2>Engagements &amp; Press</h2>
+      <p>Speaking, writing, podcasts, and media commentary. Always interested in thoughtful conversations at the edges of the discipline.</p>
+      <a href="mailto:drlauralwalsh@gmail.com?subject=Speaking%20%2F%20Media%20Inquiry" class="btn-terra">Send a Message →</a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist · Trinidad, CO</span></div>
+  </div>
+  <ul class="footer-nav">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Consulting</a></li>
+    <li><a href="therapy.html">Therapy</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
+</footer>
+
+</body>
+</html>
