@@ -1,132 +1,4 @@
-
-<body>
-
-<nav aria-label="Main navigation">
-  <a href="index.html" class="nav-logo">
-    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="42" height="42" style="height:42px;width:42px;object-fit:cover;border-radius:4px;">
-    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="forensic.html">Expert Witness</a></li>
-    <li><a href="ai.html">AI Consulting</a></li>
-    <li><a href="therapy.html">Psychotherapy</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-  </ul>
-  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
-  <a href="ai.html" onclick="closeMobileMenu()">AI Consulting</a>
-  <a href="therapy.html" onclick="closeMobileMenu()">Psychotherapy</a>
-  <a href="about.html" onclick="closeMobileMenu()">About</a>
-  <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()">Contact</a>
-</div>
-<script src="nav.js"></script>
-
-<section class="hero">
-  <div class="topo-bg" aria-hidden="true"></div>
-  <div class="hero-left">
-    <p class="hero-eyebrow">Expert Witness &nbsp;&middot;&nbsp; AI Risk Consultant &nbsp;&middot;&nbsp; Clinical Psychologist</p>
-    <h1 class="hero-name">Dr. Laura L. Walsh</h1>
-    <p class="hero-tagline">Where forensic psychology, artificial intelligence, and<br>two decades of clinical expertise converge.</p>
-    <div class="hero-pills">
-      <span class="pill">Forensic Evaluation</span>
-      <span class="pill">AI Suicide Risk</span>
-      <span class="pill-break"></span>
-      <span class="pill">Expert Witness</span>
-      <span class="pill">Adult Psychotherapy</span>
-    </div>
-    <div class="hero-btns">
-      <a href="forensic.html" class="btn-primary">For Attorneys</a>
-      <a href="ai.html" class="btn-primary">For Organizations</a>
-      <a href="therapy.html" class="btn-outline">For Individuals</a>
-    </div>
-  </div>
-  <div class="hero-right" aria-hidden="true">
-    <div class="hero-photo-wrap">
-      <img src="laura_photo.webp" alt="Dr. Laura L. Walsh" width="300" height="420" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:2px;filter:grayscale(10%) contrast(1.04);">
-    </div>
-  </div>
-  <div class="hero-location">Trinidad, Colorado</div>
-</section>
-
-<section class="services" id="services">
-  <div class="section-header">
-    <span class="section-label">Specialized Practice</span>
-    <div class="section-rule" aria-hidden="true"></div>
-  </div>
-  <h2 class="section-title" style="font-size:clamp(2.2rem,4vw,3.8rem);max-width:600px;">Rare expertise at the<br><em>intersection of mind, law &amp; technology</em></h2>
-  <div class="services-featured">
-    <a href="forensic.html" class="service-card-featured" aria-label="Expert Witness and Forensic Consultation">
-      <div class="sfeat-label">01</div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48" style="margin-bottom:1.5rem;color:var(--terra);" aria-hidden="true"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-      <h3>Expert Witness &amp;<br>Forensic Consultation</h3>
-      <p>Rigorous psychological expertise for civil and employment legal proceedings &mdash; including forensic evaluations, suicide risk assessment, and attorney consultation on complex mental health matters.</p>
-      <div class="sfeat-tags"><span>Forensic Evaluation</span><span>Suicide Risk</span><span>Expert Witness</span><span>Attorney Consultation</span></div>
-      <span class="service-link" style="margin-top:auto;">For Attorneys &rarr;</span>
-    </a>
-    <a href="ai.html" class="service-card-featured service-card-featured--ai" aria-label="AI Suicide Risk Consulting">
-      <div class="sfeat-label">02</div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48" style="margin-bottom:1.5rem;color:var(--terra);" aria-hidden="true"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-      <h3>AI Suicide Risk Consulting</h3>
-      <p>Helping technology organizations identify where their AI systems misread or miss suicide risk and high-risk decision states &mdash; so teams can build safer products with genuine clinical grounding.</p>
-      <div class="sfeat-tags"><span>AI Suicide Risk</span><span>High-Risk Decision States</span><span>Red Teaming</span><span>Safety Design</span></div>
-      <span class="service-link" style="margin-top:auto;">For Organizations &rarr;</span>
-    </a>
-    <a href="therapy.html" class="service-card-featured" aria-label="Adult Psychotherapy">
-      <div class="sfeat-label">03</div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48" style="margin-bottom:1.5rem;color:var(--terra);" aria-hidden="true"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      <h3>Adult Psychotherapy</h3>
-      <p>Boutique telehealth for adults, couples, and alternative families across Colorado. Practical, active, and authentic &mdash; helping people become the changemakers in their own lives.</p>
-      <div class="sfeat-tags"><span>Adult ADHD</span><span>Grief &amp; Suicide Loss</span><span>Trauma &amp; Attachment</span><span>Relationships</span></div>
-      <span class="service-link" style="margin-top:auto;">For Individuals &rarr;</span>
-    </a>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="about-img-wrap">
-    <img src="laura_photo2.webp" alt="Dr. Laura L. Walsh" width="480" height="600" loading="lazy" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:2px;">
-    <div class="about-badge"><strong>20+</strong><span>Years of Experience</span></div>
-  </div>
-  <div class="about-content">
-    <div class="section-header">
-      <span class="section-label">About</span>
-      <div class="section-rule" aria-hidden="true"></div>
-    </div>
-    <h2 class="section-title">A career built at the<br><em>edges of the discipline</em></h2>
-    <p>Dr. Laura L. Walsh is a licensed clinical psychologist practicing in the mountains of Trinidad, Colorado. Over two decades she has cultivated a practice that refuses to stay in one lane &mdash; bridging the consulting room, the courtroom, and the frontier of AI safety.</p>
-    <p>She is a published author and sought-after speaker, bringing the same intellectual rigor to conference stages and written work that she brings to client care and expert testimony.</p>
-    <div class="about-specialties">
-      <span class="specialty-item">Adult ADHD</span><span class="specialty-item">Grief &amp; Loss</span>
-      <span class="specialty-item">Suicide Loss</span><span class="specialty-item">LGBTQ+ Issues</span>
-      <span class="specialty-item">Forensic Evaluation</span><span class="specialty-item">AI Suicide Risk</span>
-      <span class="specialty-item">Substance Addiction</span><span class="specialty-item">Behavioral Addiction</span>
-    </div>
-    <a href="contact.html" class="btn-primary">Work With Dr. Walsh</a>
-  </div>
-</section>
-
-<section class="reframed" id="reframed">
-  <div class="reframed-inner">
-    <p class="reframed-label">Featured Project</p>
-    <h2 class="reframed-title"><em>REFRAMED</em></h2>
-    <div class="reframed-quote">
-      <blockquote>"Is there another way to look at this?"</blockquote>
-    </div>
-    <p class="reframed-body">Reframing is the simple act that starts with a single question. Dr. Walsh's REFRAMED project doesn't tell you how to think differently &mdash; it shows you. Everything is a life lesson if you frame it that way.</p>
-    <a href="https://reframedself.com" target="_blank" rel="noopener noreferrer" class="btn-light">Visit Reframedself.com &rarr;</a>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div>
-    <div class="section-header">
-      <span class="section-label">Contact</span>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -152,9 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="preload" as="image" href="laura_photo.webp" type="image/webp">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Dr. Laura L. Walsh","jobTitle":"Licensed Clinical Psychologist","description":"Licensed clinical psychologist, expert witness, and AI risk consultant in Trinidad, Colorado.","url":"https://walshpsychology.com/","image":"https://walshpsychology.com/laura_square_headshot.jpg","telephone":"+17205155681","email":"laura@walshpsych.net","address":{"@type":"PostalAddress","addressLocality":"Trinidad","addressRegion":"CO","addressCountry":"US"},"sameAs":["https://reframedself.com"],"knowsAbout":["Clinical Psychology","Forensic Psychology","AI Risk Consulting","Adult ADHD","Suicide Risk Assessment"]}
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dr. Laura L. Walsh","jobTitle":"Licensed Clinical Psychologist","description":"Licensed clinical psychologist, expert witness, and AI risk consultant in Trinidad, Colorado.","url":"https://walshpsychology.com/","image":"https://walshpsychology.com/laura_square_headshot.jpg","telephone":"+17205155681","email":"laura@walshpsych.net","address":{"@type":"PostalAddress","addressLocality":"Trinidad","addressRegion":"CO","addressCountry":"US"},"sameAs":["https://reframedself.com"]}</script>
   <style>
   .hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 0.8fr;background:#1b2d4a;position:relative;overflow:hidden}
   .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(184,92,56,.14) 0%,transparent 65%),radial-gradient(ellipse 40% 60% at 20% 80%,rgba(143,163,177,.08) 0%,transparent 60%)}
@@ -210,13 +80,7 @@
   .contact-info{margin-bottom:2.5rem}
   .contact-item{display:flex;align-items:baseline;gap:1rem;padding:1rem 0;border-bottom:1px solid rgba(30,45,61,.08);font-size:.88rem;color:var(--slate)}
   .contact-item-label{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--terra);min-width:80px}
-  @media(max-width:900px){
-    .hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:9rem 1.5rem 5rem}
-    .services{padding:5rem 1.5rem}.services-featured{grid-template-columns:1fr}
-    .about{grid-template-columns:1fr;padding:5rem 1.5rem;gap:3rem}
-    .reframed{padding:5rem 1.5rem}
-    .contact{grid-template-columns:1fr;padding:5rem 1.5rem;gap:3rem}
-  }
+  @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:9rem 1.5rem 5rem}.services{padding:5rem 1.5rem}.services-featured{grid-template-columns:1fr}.about{grid-template-columns:1fr;padding:5rem 1.5rem;gap:3rem}.reframed{padding:5rem 1.5rem}.contact{grid-template-columns:1fr;padding:5rem 1.5rem;gap:3rem}}
   </style>
 </head>
 <body>
@@ -232,9 +96,7 @@
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html" class="nav-cta">Contact</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
@@ -250,11 +112,7 @@
     <p class="hero-eyebrow">Expert Witness &nbsp;&middot;&nbsp; AI Risk Consultant &nbsp;&middot;&nbsp; Clinical Psychologist</p>
     <h1 class="hero-name">Dr. Laura L. Walsh</h1>
     <p class="hero-tagline">Where forensic psychology, artificial intelligence, and<br>two decades of clinical expertise converge.</p>
-    <div class="hero-pills">
-      <span class="pill">Forensic Evaluation</span><span class="pill">AI Suicide Risk</span>
-      <span class="pill-break"></span>
-      <span class="pill">Expert Witness</span><span class="pill">Adult Psychotherapy</span>
-    </div>
+    <div class="hero-pills"><span class="pill">Forensic Evaluation</span><span class="pill">AI Suicide Risk</span><span class="pill-break"></span><span class="pill">Expert Witness</span><span class="pill">Adult Psychotherapy</span></div>
     <div class="hero-btns">
       <a href="forensic.html" class="btn-primary">For Attorneys</a>
       <a href="ai.html" class="btn-primary">For Organizations</a>
@@ -269,10 +127,7 @@
   <div class="hero-location">Trinidad, Colorado</div>
 </section>
 <section class="services" id="services">
-  <div class="section-header">
-    <span class="section-label">Specialized Practice</span>
-    <div class="section-rule" aria-hidden="true"></div>
-  </div>
+  <div class="section-header"><span class="section-label">Specialized Practice</span><div class="section-rule" aria-hidden="true"></div></div>
   <h2 class="section-title" style="font-size:clamp(2.2rem,4vw,3.8rem);max-width:600px;">Rare expertise at the<br><em>intersection of mind, law &amp; technology</em></h2>
   <div class="services-featured">
     <a href="forensic.html" class="service-card-featured" aria-label="Expert Witness and Forensic Consultation">
@@ -311,12 +166,7 @@
     <h2 class="section-title">A career built at the<br><em>edges of the discipline</em></h2>
     <p>Dr. Laura L. Walsh is a licensed clinical psychologist practicing in the mountains of Trinidad, Colorado. Over two decades she has cultivated a practice that refuses to stay in one lane &mdash; bridging the consulting room, the courtroom, and the frontier of AI safety.</p>
     <p>She is a published author and sought-after speaker, bringing the same intellectual rigor to conference stages and written work that she brings to client care and expert testimony.</p>
-    <div class="about-specialties">
-      <span class="specialty-item">Adult ADHD</span><span class="specialty-item">Grief &amp; Loss</span>
-      <span class="specialty-item">Suicide Loss</span><span class="specialty-item">LGBTQ+ Issues</span>
-      <span class="specialty-item">Forensic Evaluation</span><span class="specialty-item">AI Suicide Risk</span>
-      <span class="specialty-item">Substance Addiction</span><span class="specialty-item">Behavioral Addiction</span>
-    </div>
+    <div class="about-specialties"><span class="specialty-item">Adult ADHD</span><span class="specialty-item">Grief &amp; Loss</span><span class="specialty-item">Suicide Loss</span><span class="specialty-item">LGBTQ+ Issues</span><span class="specialty-item">Forensic Evaluation</span><span class="specialty-item">AI Suicide Risk</span><span class="specialty-item">Substance Addiction</span><span class="specialty-item">Behavioral Addiction</span></div>
     <a href="contact.html" class="btn-primary">Work With Dr. Walsh</a>
   </div>
 </section>
