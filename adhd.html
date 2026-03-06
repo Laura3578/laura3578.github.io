@@ -1,368 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adult ADHD Assessment | Dr. Laura L. Walsh</title>
-<meta name="description" content="Adult ADHD assessment by Dr. Laura L. Walsh — comprehensive evaluation including clinical interview, validated measures, written report, and medication referral letter if indicated. Telehealth in Colorado.">
-<link rel="canonical" href="https://walshpsychology.com/adhd.html">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://walshpsychology.com/adhd.html">
-<meta property="og:title" content="Adult ADHD Assessment | Dr. Laura L. Walsh">
-<meta property="og:description" content="Comprehensive adult ADHD evaluation in Colorado. Clinical interview, validated measures, written report with practical strategies, and medication referral letter if indicated.">
-<meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Adult ADHD Assessment | Dr. Laura L. Walsh">
-<meta name="twitter:description" content="Comprehensive adult ADHD assessment via telehealth in Colorado. Get clarity, practical strategies, and a written report.">
-<meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
-<link rel="icon" type="image/png" href="walsh_logo_final.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --slate:  #1e2d3d;
-    --deep:   #111b26;
-    --terra:  #b85c38;
-    --sand:   #e8dcc8;
-    --cream:  #f5f0e8;
-    --mist:   #8fa3b1;
-    --white:  #fdfaf6;
-    --serif:  'Cormorant Garamond', Georgia, serif;
-    --sans:   'DM Sans', sans-serif;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
-
-  /* ─── NAV ─────────────────────────────────────────── */
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 4rem; background: rgba(253,250,246,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(30,45,61,0.08); }
-  .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
-  .nav-logo img { height: 38px; width: 38px; object-fit: cover; border-radius: 3px; }
-  .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; }
-  .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
-  .nav-links a:hover, .nav-links a.active { color: var(--terra); }
-  .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
-  .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
-
-  /* ─── HERO ────────────────────────────────────────── */
-  .page-hero { min-height: 60vh; background: #1b2d4a; display: flex; flex-direction: column; justify-content: flex-end; padding: 10rem 4rem 5rem; position: relative; overflow: hidden; }
-  .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 30% 60%, rgba(184,92,56,0.10) 0%, transparent 65%); }
-  .topo-bg { position: absolute; inset: 0; pointer-events: none; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Cellipse cx='420' cy='320' rx='80' ry='65'/%3E%3Cellipse cx='420' cy='320' rx='130' ry='108'/%3E%3Cellipse cx='420' cy='320' rx='180' ry='155'/%3E%3Cellipse cx='420' cy='320' rx='235' ry='205'/%3E%3Cellipse cx='420' cy='320' rx='295' ry='258'/%3E%3Cellipse cx='420' cy='320' rx='360' ry='315'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; }
-  .hero-content { position: relative; z-index: 1; max-width: 800px; }
-  .page-eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.2rem; }
-  .page-title { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 300; color: var(--cream); line-height: 1.05; margin-bottom: 1.5rem; }
-  .page-title em { font-style: italic; color: var(--sand); }
-  .page-subtitle { font-family: var(--serif); font-size: 1.2rem; font-weight: 300; font-style: italic; color: var(--mist); max-width: 600px; line-height: 1.7; }
-
-  /* ─── BREADCRUMB ──────────────────────────────────── */
-  .breadcrumb { background: var(--sand); padding: 0.9rem 4rem; display: flex; align-items: center; gap: 0.6rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--slate); }
-  .breadcrumb a { color: var(--terra); text-decoration: none; }
-  .breadcrumb-sep { color: var(--mist); }
-
-  /* ─── LAYOUT ──────────────────────────────────────── */
-  .content-wrap { max-width: 1100px; margin: 0 auto; padding: 0 4rem; }
-  .section { padding: 5rem 0; border-bottom: 1px solid rgba(30,45,61,0.08); }
-  .section:last-child { border-bottom: none; }
-  .section-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terra); display: block; margin-bottom: 0.75rem; }
-  .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--slate); line-height: 1.15; margin-bottom: 1.8rem; }
-  .section-title em { font-style: italic; color: var(--terra); }
-  .section-body { font-size: 0.95rem; line-height: 1.9; color: #445566; max-width: 720px; margin-bottom: 1.5rem; }
-
-  /* ─── IMPORTANT NOTE ──────────────────────────────── */
-  .note-box { background: var(--cream); border-left: 3px solid var(--terra); padding: 1.8rem 2rem; margin-top: 2rem; max-width: 720px; }
-  .note-box p { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--slate); line-height: 1.7; }
-
-  /* ─── SYMPTOM GRID ────────────────────────────────── */
-  .symptom-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; margin-top: 2.5rem; }
-  .symptom-card { background: var(--cream); padding: 2rem 2.5rem; border-left: 3px solid transparent; transition: border-color 0.2s; }
-  .symptom-card:hover { border-left-color: var(--terra); }
-  .symptom-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--slate); margin-bottom: 1rem; }
-  .symptom-card ul { list-style: none; padding: 0; }
-  .symptom-card ul li { font-size: 0.88rem; line-height: 1.75; color: #556070; padding: 0.3rem 0; border-bottom: 1px solid rgba(30,45,61,0.06); }
-  .symptom-card ul li:last-child { border-bottom: none; }
-  .symptom-card ul li::before { content: '→ '; color: var(--terra); font-size: 0.8rem; }
-
-  /* ─── DOMAINS STRIP ───────────────────────────────── */
-  .domains-strip { background: var(--slate); padding: 5rem 0; }
-  .domains-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 3rem; }
-  .domain-card { background: var(--deep); padding: 2.5rem; }
-  .domain-num { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.75rem; }
-  .domain-card h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 300; color: var(--sand); margin-bottom: 1.2rem; line-height: 1.2; }
-  .domain-card ul { list-style: none; padding: 0; }
-  .domain-card ul li { font-size: 0.87rem; line-height: 1.8; color: var(--mist); padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-  .domain-card ul li:last-child { border-bottom: none; }
-  .domain-card ul li::before { content: '→ '; color: var(--terra); }
-
-  /* ─── ASSESSMENT PROCESS ──────────────────────────── */
-  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-  .process-step { padding: 2rem; border-top: 3px solid var(--terra); }
-  .process-num { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.75rem; }
-  .process-step h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--slate); margin-bottom: 0.75rem; }
-  .process-step p { font-size: 0.87rem; line-height: 1.75; color: #556070; }
-
-  /* ─── MEDICATION SECTION ──────────────────────────── */
-  .med-section { background: var(--deep); padding: 5rem 4rem; }
-  .med-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-  .med-quote { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 300; color: var(--cream); line-height: 1.5; }
-  .med-quote em { font-style: italic; color: var(--terra); }
-  .med-body p { font-size: 0.92rem; line-height: 1.9; color: var(--mist); margin-bottom: 1.2rem; }
-
-  /* ─── CTA ─────────────────────────────────────────── */
-  .cta-section { background: var(--terra); padding: 5rem 4rem; text-align: center; }
-  .cta-section h2 { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; line-height: 1.2; }
-  .cta-section h2 em { font-style: italic; }
-  .cta-section p { font-size: 0.92rem; color: rgba(253,250,246,0.8); line-height: 1.8; margin-bottom: 2.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
-  .btn-white { display: inline-block; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1.1rem 2.5rem; background: var(--white); color: var(--terra); text-decoration: none; border-radius: 2px; transition: all 0.25s; }
-  .btn-white:hover { background: var(--cream); }
-
-  /* ─── FOOTER ──────────────────────────────────────── */
-  footer { background: var(--deep); border-top: 1px solid rgba(143,163,177,0.1); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
-  .footer-logo { display: flex; align-items: center; gap: 0.75rem; }
-  .footer-logo img { height: 32px; width: 32px; object-fit: cover; border-radius: 3px; opacity: 0.8; }
-  .footer-logo-text { font-family: var(--serif); font-size: 0.9rem; color: var(--cream); }
-  .footer-logo-text span { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); opacity: 0.7; }
-  .footer-nav { list-style: none; display: flex; gap: 2rem; }
-  .footer-nav a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
-  .footer-nav a:hover { opacity: 1; }
-  .footer-copy { font-size: 0.72rem; color: var(--mist); opacity: 0.5; }
-
-  @media (max-width: 900px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
-    .page-hero { padding: 8rem 1.5rem 4rem; }
-    .breadcrumb { padding: 0.9rem 1.5rem; }
-    .content-wrap { padding: 0 1.5rem; }
-    .symptom-grid, .process-grid, .domains-grid { grid-template-columns: 1fr; }
-    .med-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-    .med-section, .cta-section { padding: 4rem 1.5rem; }
-    footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
-  }
-
-/* ─── MOBILE HAMBURGER ───────────────────────────── */
-.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; z-index: 200; }
-.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--slate); transition: all 0.3s ease; border-radius: 2px; }
-.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(27,45,74,0.98); z-index: 150; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
-.mobile-menu.open { display: flex; }
-.mobile-menu a { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--cream); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
-.mobile-menu a:hover { color: var(--terra); }
-.mobile-menu .mobile-cta { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.8rem 2rem; border: 1.5px solid var(--terra); color: var(--terra); border-radius: 2px; }
-@media (max-width: 900px) { .nav-hamburger { display: flex; } }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b2d4a">
+  <title>Adult ADHD Assessment | Dr. Laura L. Walsh</title>
+  <meta name="description" content="Adult ADHD assessment by Dr. Laura L. Walsh &mdash; comprehensive evaluation including clinical interview, validated measures, written report, and medication referral letter if indicated. Telehealth in Colorado.">
+  <link rel="canonical" href="https://walshpsychology.com/adhd.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://walshpsychology.com/adhd.html">
+  <meta property="og:title" content="Adult ADHD Assessment | Dr. Laura L. Walsh">
+  <meta property="og:description" content="Comprehensive adult ADHD evaluation in Colorado. Clinical interview, validated measures, written report with practical strategies, and medication referral letter if indicated.">
+  <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@walshpsychology">
+  <meta name="twitter:title" content="Adult ADHD Assessment | Dr. Laura L. Walsh">
+  <meta name="twitter:description" content="Comprehensive adult ADHD assessment via telehealth in Colorado. Get clarity, practical strategies, and a written report.">
+  <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="walsh_logo_final.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ─── PAGE HERO ───────────────────────────────────── */
+    .page-hero {
+      min-height: 60vh;
+      background: #1b2d4a;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10rem 4rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 30% 60%, rgba(184,92,56,0.10) 0%, transparent 65%);
+    }
+    .topo-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Cellipse cx='420' cy='320' rx='80' ry='65'/%3E%3Cellipse cx='420' cy='320' rx='130' ry='108'/%3E%3Cellipse cx='420' cy='320' rx='180' ry='155'/%3E%3Cellipse cx='420' cy='320' rx='235' ry='205'/%3E%3Cellipse cx='420' cy='320' rx='295' ry='258'/%3E%3Cellipse cx='420' cy='320' rx='360' ry='315'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+    /* ─── SYMPTOM GRID ────────────────────────────────── */
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5px;
+      margin-top: 2.5rem;
+    }
+    .symptom-card {
+      background: var(--cream);
+      padding: 2rem 2.5rem;
+      border-left: 3px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .symptom-card:hover { border-left-color: var(--terra); }
+    .symptom-card h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--slate);
+      margin-bottom: 1rem;
+    }
+    .symptom-card ul { list-style: none; padding: 0; }
+    .symptom-card ul li {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: #556070;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid rgba(30,45,61,0.06);
+    }
+    .symptom-card ul li:last-child { border-bottom: none; }
+    .symptom-card ul li::before { content: '&rarr; '; color: var(--terra); font-size: 0.8rem; }
+    /* ─── DOMAINS STRIP ───────────────────────────────── */
+    .domains-strip {
+      background: var(--slate);
+      padding: 5rem 0;
+    }
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      margin-top: 3rem;
+    }
+    .domain-card {
+      background: var(--deep);
+      padding: 2.5rem;
+    }
+    .domain-num {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 0.75rem;
+    }
+    .domain-card h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--sand);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    .domain-card ul { list-style: none; padding: 0; }
+    .domain-card ul li {
+      font-size: 0.87rem;
+      line-height: 1.8;
+      color: var(--mist);
+      padding: 0.3rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .domain-card ul li:last-child { border-bottom: none; }
+    .domain-card ul li::before { content: '&rarr; '; color: var(--terra); }
+    /* ─── PROCESS GRID ────────────────────────────────── */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .process-step {
+      padding: 2rem;
+      border-top: 3px solid var(--terra);
+    }
+    .process-num {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 0.75rem;
+    }
+    .process-step h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--slate);
+      margin-bottom: 0.75rem;
+    }
+    .process-step p { font-size: 0.87rem; line-height: 1.75; color: #556070; }
+    /* ─── MEDICATION SECTION ──────────────────────────── */
+    .med-section {
+      background: var(--deep);
+      padding: 5rem 4rem;
+    }
+    .med-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .med-quote {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.5;
+    }
+    .med-quote em { font-style: italic; color: var(--terra); }
+    .med-body p { font-size: 0.92rem; line-height: 1.9; color: var(--mist); margin-bottom: 1.2rem; }
+    /* ─── CTA SECTION ─────────────────────────────────── */
+    .cta-section {
+      background: var(--terra);
+      padding: 5rem 4rem;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .cta-section h2 em { font-style: italic; }
+    .cta-section p {
+      font-size: 0.92rem;
+      color: rgba(253,250,246,0.8);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-white {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1.1rem 2.5rem;
+      background: var(--white);
+      color: var(--terra);
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.25s;
+    }
+    .btn-white:hover { background: var(--cream); }
+    /* ─── NOTE BOX ────────────────────────────────────── */
+    .note-box {
+      background: var(--cream);
+      border-left: 3px solid var(--terra);
+      padding: 1.8rem 2rem;
+      margin-top: 2rem;
+      max-width: 720px;
+    }
+    .note-box p {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+    /* ─── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 900px) {
+      .page-hero { padding: 8rem 1.5rem 4rem; }
+      .symptom-grid,
+      .process-grid,
+      .domains-grid { grid-template-columns: 1fr; }
+      .med-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .med-section,
+      .cta-section { padding: 4rem 1.5rem; }
+    }
+  </style>
 </head>
 <body>
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">
+      <img src="walsh_logo_final.png" alt="Walsh Psychology" width="38" height="38">
+      <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="forensic.html">Expert Witness</a></li>
+      <li><a href="ai.html">AI Consulting</a></li>
+      <li><a href="therapy.html">Psychotherapy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="nav-logo">
-    <img src="walsh_logo_final.png" alt="Walsh Psychology">
-    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="forensic.html">Expert Witness</a></li>
-    <li><a href="ai.html">AI Consulting</a></li>
-    <li><a href="therapy.html" class="active">Psychotherapy</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-  </ul>
-  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
-  <a href="ai.html" onclick="closeMobileMenu()">AI Consulting</a>
-  <a href="therapy.html" onclick="closeMobileMenu()">Psychotherapy</a>
-  <a href="about.html" onclick="closeMobileMenu()">About</a>
-  <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()">Contact</a>
-</div>
-<script>
-function toggleMobileMenu(){const m=document.getElementById('mobileMenu'),b=document.getElementById('hamburgerBtn');m.classList.toggle('open');b.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
-function closeMobileMenu(){const m=document.getElementById('mobileMenu'),b=document.getElementById('hamburgerBtn');m.classList.remove('open');b.classList.remove('open');document.body.style.overflow='';}
-</script>
-
-<!-- HERO -->
-<section class="page-hero">
-  <div class="topo-bg"></div>
-  <div class="hero-content">
-    <p class="page-eyebrow">Adult ADHD &nbsp;·&nbsp; Assessment &nbsp;·&nbsp; Colorado</p>
-    <h1 class="page-title">Understanding your attention<br><em>is the first real step.</em></h1>
-    <p class="page-subtitle">A thorough assessment doesn't just identify what's getting in the way — it gives you a map for what to do about it.</p>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="forensic.html">Expert Witness</a>
+    <a href="ai.html">AI Consulting</a>
+    <a href="therapy.html">Psychotherapy</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="mobile-cta">Contact</a>
   </div>
-</section>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <a href="index.html">Home</a>
-  <span class="breadcrumb-sep">·</span>
-  <a href="therapy.html">Psychotherapy</a>
-  <span class="breadcrumb-sep">·</span>
-  <span>Adult ADHD Assessment</span>
-</div>
+  <script src="nav.js"></script>
 
-<div class="content-wrap">
-
-  <!-- INTRO -->
-  <section class="section" id="intro">
-    <span class="section-label">About the Assessment</span>
-    <h2 class="section-title">A comprehensive evaluation<br><em>for adults who want clarity</em></h2>
-    <p class="section-body">Adult ADHD is frequently missed, misunderstood, and misattributed — especially in people who have spent decades developing workarounds they don't even recognize as compensatory. If you've always wondered why certain things feel disproportionately hard, an assessment can provide answers that change how you understand yourself.</p>
-    <p class="section-body">Dr. Walsh conducts adult ADHD assessments that include a comprehensive clinical interview and evidence-validated assessment measures. The process culminates in a written report with practical, easy-to-deploy strategies, and a letter suitable for medication evaluation if indicated.</p>
-
-    <div class="note-box">
-      <p>A thorough assessment is the foundation of clarity — though it is worth noting that not everyone who struggles with attention, focus, or executive functioning meets the clinical criteria for an ADHD diagnosis. The goal of assessment is accuracy, not confirmation.</p>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="topo-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="page-eyebrow">Adult ADHD &nbsp;&middot;&nbsp; Assessment &nbsp;&middot;&nbsp; Colorado</p>
+      <h1 class="page-title">Understanding your attention<br><em>is the first real step.</em></h1>
+      <p class="page-subtitle">A thorough assessment doesn&rsquo;t just identify what&rsquo;s getting in the way &mdash; it gives you a map for what to do about it.</p>
     </div>
   </section>
 
-  <!-- WHAT IS ADHD -->
-  <section class="section" id="symptoms">
-    <span class="section-label">Understanding ADHD</span>
-    <h2 class="section-title">ADHD looks different<br><em>than most people expect</em></h2>
-    <p class="section-body">The hyperactive child who can't sit still is the cultural archetype — but adult ADHD is far more nuanced. It shows up in patterns of executive dysfunction, emotional dysregulation, and inconsistency that can look like laziness, anxiety, or simply being "bad at adulting." Many adults with ADHD have never been identified because they were smart enough to compensate — until they weren't.</p>
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">&middot;</span>
+    <a href="therapy.html">Psychotherapy</a>
+    <span class="breadcrumb-sep" aria-hidden="true">&middot;</span>
+    <span aria-current="page">Adult ADHD Assessment</span>
+  </nav>
 
-    <div class="symptom-grid">
-      <div class="symptom-card">
-        <h3>Common Presentations</h3>
-        <ul>
-          <li>Difficulty sustaining attention on low-interest tasks</li>
-          <li>Chronic procrastination and task initiation problems</li>
-          <li>Forgetfulness and losing things regularly</li>
-          <li>Restlessness, fidgeting, or inability to relax</li>
-          <li>Impulsive decisions or interrupting in conversation</li>
-          <li>Hyperfocus on high-interest tasks</li>
-          <li>Difficulty with time management and deadlines</li>
-        </ul>
-      </div>
-      <div class="symptom-card">
-        <h3>Less Recognized Presentations</h3>
-        <ul>
-          <li>Emotional dysregulation and rejection sensitivity</li>
-          <li>Inconsistent performance — brilliant one day, can't function the next</li>
-          <li>Chronic underachievement despite high intelligence</li>
-          <li>Difficulty with transitions and shifting between tasks</li>
-          <li>Problems with working memory mid-conversation</li>
-          <li>Sleep dysregulation and difficulty winding down</li>
-          <li>Sense of always being behind, no matter how hard you try</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-<!-- WHERE IT SHOWS UP -->
-<section class="domains-strip">
   <div class="content-wrap">
-    <span class="section-label" style="color:var(--terra);">Where ADHD Shows Up</span>
-    <h2 class="section-title" style="color:var(--cream);">ADHD doesn't stay<br><em style="color:var(--sand);">in one area of your life</em></h2>
-    <p class="section-body" style="color:var(--mist);">Because ADHD is a disorder of executive functioning, it touches every domain that requires planning, follow-through, and self-regulation.</p>
-    <div class="domains-grid">
-      <div class="domain-card">
-        <div class="domain-num">Home</div>
-        <h3>Daily Life &amp; Relationships</h3>
-        <ul>
-          <li>Disorganized living spaces despite best intentions</li>
-          <li>Forgotten appointments, bills, and obligations</li>
-          <li>Difficulty following through on household responsibilities</li>
-          <li>Conflict from perceived unreliability or inattentiveness</li>
-          <li>Trouble being present during conversations</li>
-        </ul>
+    <!-- INTRO -->
+    <section class="section" id="intro">
+      <span class="section-label">About the Assessment</span>
+      <h2 class="section-title">A comprehensive evaluation<br><em>for adults who want clarity</em></h2>
+      <p class="section-body">Adult ADHD is frequently missed, misunderstood, and misattributed &mdash; especially in people who have spent decades developing workarounds they don&rsquo;t even recognize as compensatory. If you&rsquo;ve always wondered why certain things feel disproportionately hard, an assessment can provide answers that change how you understand yourself.</p>
+      <p class="section-body">Dr. Walsh conducts adult ADHD assessments that include a comprehensive clinical interview and evidence-validated assessment measures. The process culminates in a written report with practical, easy-to-deploy strategies, and a letter suitable for medication evaluation if indicated.</p>
+      <div class="note-box">
+        <p>A thorough assessment is the foundation of clarity &mdash; though it is worth noting that not everyone who struggles with attention, focus, or executive functioning meets the clinical criteria for an ADHD diagnosis. The goal of assessment is accuracy, not confirmation.</p>
       </div>
-      <div class="domain-card">
-        <div class="domain-num">Work</div>
-        <h3>Career &amp; Professional Life</h3>
-        <ul>
-          <li>Missing deadlines or underdelivering on projects</li>
-          <li>Difficulty prioritizing competing demands</li>
-          <li>Inconsistent output that puzzles colleagues and managers</li>
-          <li>Struggles with administrative tasks and paperwork</li>
-          <li>Brilliant ideas that never make it to execution</li>
-        </ul>
+    </section>
+
+    <!-- WHAT IS ADHD -->
+    <section class="section" id="symptoms">
+      <span class="section-label">Understanding ADHD</span>
+      <h2 class="section-title">ADHD looks different<br><em>than most people expect</em></h2>
+      <p class="section-body">The hyperactive child who can&rsquo;t sit still is the cultural archetype &mdash; but adult ADHD is far more nuanced. It shows up in patterns of executive dysfunction, emotional dysregulation, and inconsistency that can look like laziness, anxiety, or simply being &ldquo;bad at adulting.&rdquo; Many adults with ADHD have never been identified because they were smart enough to compensate &mdash; until they weren&rsquo;t.</p>
+      <div class="symptom-grid">
+        <div class="symptom-card">
+          <h3>Common Presentations</h3>
+          <ul>
+            <li>Difficulty sustaining attention on low-interest tasks</li>
+            <li>Chronic procrastination and task initiation problems</li>
+            <li>Forgetfulness and losing things regularly</li>
+            <li>Restlessness, fidgeting, or inability to relax</li>
+            <li>Impulsive decisions or interrupting in conversation</li>
+            <li>Hyperfocus on high-interest tasks</li>
+            <li>Difficulty with time management and deadlines</li>
+          </ul>
+        </div>
+        <div class="symptom-card">
+          <h3>Less Recognized Presentations</h3>
+          <ul>
+            <li>Emotional dysregulation and rejection sensitivity</li>
+            <li>Inconsistent performance &mdash; brilliant one day, can&rsquo;t function the next</li>
+            <li>Chronic underachievement despite high intelligence</li>
+            <li>Difficulty with transitions and shifting between tasks</li>
+            <li>Problems with working memory mid-conversation</li>
+            <li>Sleep dysregulation and difficulty winding down</li>
+            <li>Sense of always being behind, no matter how hard you try</li>
+          </ul>
+        </div>
       </div>
-      <div class="domain-card">
-        <div class="domain-num">School</div>
-        <h3>Academic Settings</h3>
-        <ul>
-          <li>Difficulty reading dense or unengaging material</li>
-          <li>Leaving assignments until the last possible moment</li>
-          <li>Underperforming on tests relative to actual knowledge</li>
-          <li>Losing track of assignments, syllabi, and deadlines</li>
-          <li>Qualifying for — and benefiting from — academic accommodations</li>
-        </ul>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
 
-<div class="content-wrap">
-
-  <!-- THE ASSESSMENT -->
-  <section class="section" id="process">
-    <span class="section-label">The Assessment Process</span>
-    <h2 class="section-title">What to expect<br><em>from start to finish</em></h2>
-    <p class="section-body">The assessment is designed to be thorough without being exhausting. Dr. Walsh takes the time to understand your history, your patterns, and the specific ways ADHD may be showing up in your life — not just whether you check enough boxes on a rating scale.</p>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="process-num">Step 01</div>
-        <h3>Clinical Interview</h3>
-        <p>A comprehensive conversation covering your developmental history, current symptoms, life domains affected, and the strategies you've already tried. This is the foundation of any good assessment.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">Step 02</div>
-        <h3>Evidence-Validated Measures</h3>
-        <p>Standardized assessment tools that have been rigorously validated for adult ADHD — not just checklists, but measures that distinguish ADHD from anxiety, depression, and other conditions that can look similar.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">Step 03</div>
-        <h3>Written Report &amp; Letter</h3>
-        <p>A clear written report summarizing findings, practical strategies tailored to your specific presentation, and — where clinically indicated — a letter suitable for medication evaluation or accommodation requests.</p>
+  <!-- WHERE IT SHOWS UP -->
+  <section class="domains-strip">
+    <div class="content-wrap">
+      <span class="section-label" style="color:var(--terra);">Where ADHD Shows Up</span>
+      <h2 class="section-title" style="color:var(--cream);">ADHD doesn&rsquo;t stay<br><em style="color:var(--sand);">in one area of your life</em></h2>
+      <p class="section-body" style="color:var(--mist);">Because ADHD is a disorder of executive functioning, it touches every domain that requires planning, follow-through, and self-regulation.</p>
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="domain-num">Home</div>
+          <h3>Daily Life &amp; Relationships</h3>
+          <ul>
+            <li>Disorganized living spaces despite best intentions</li>
+            <li>Forgotten appointments, bills, and obligations</li>
+            <li>Difficulty following through on household responsibilities</li>
+            <li>Conflict from perceived unreliability or inattentiveness</li>
+            <li>Trouble being present during conversations</li>
+          </ul>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Work</div>
+          <h3>Career &amp; Professional Life</h3>
+          <ul>
+            <li>Missing deadlines or underdelivering on projects</li>
+            <li>Difficulty prioritizing competing demands</li>
+            <li>Inconsistent output that puzzles colleagues and managers</li>
+            <li>Struggles with administrative tasks and paperwork</li>
+            <li>Brilliant ideas that never make it to execution</li>
+          </ul>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">School</div>
+          <h3>Academic Settings</h3>
+          <ul>
+            <li>Difficulty reading dense or unengaging material</li>
+            <li>Leaving assignments until the last possible moment</li>
+            <li>Underperforming on tests relative to actual knowledge</li>
+            <li>Losing track of assignments, syllabi, and deadlines</li>
+            <li>Qualifying for &mdash; and benefiting from &mdash; academic accommodations</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-</div>
-
-<!-- MEDICATION SECTION -->
-<section class="med-section">
-  <div class="med-inner">
-    <div>
-      <p class="med-quote">Medication doesn't manage ADHD.<br><em>It powers the strategies that do.</em></p>
-    </div>
-    <div class="med-body">
-      <p>There is a pervasive misconception that medication is the treatment for ADHD. It isn't. Medication can be a powerful tool — but only when it's amplifying strategies that are already in place. Without structure, systems, and skills, medication has nothing to work with.</p>
-      <p>Think of it this way: medication can sharpen your focus and quiet the noise — but it cannot teach you how to prioritize, build habits, or manage your time. Those are learned skills, and they require practice regardless of whether you medicate.</p>
-      <p>Dr. Walsh's assessment report includes practical, easy-to-deploy strategies specific to your presentation — because clarity about your diagnosis is only useful if it comes with a clear path forward.</p>
-    </div>
+  <div class="content-wrap">
+    <!-- THE ASSESSMENT PROCESS -->
+    <section class="section" id="process">
+      <span class="section-label">The Assessment Process</span>
+      <h2 class="section-title">What to expect<br><em>from start to finish</em></h2>
+      <p class="section-body">The assessment is designed to be thorough without being exhausting. Dr. Walsh takes the time to understand your history, your patterns, and the specific ways ADHD may be showing up in your life &mdash; not just whether you check enough boxes on a rating scale.</p>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">Step 01</div>
+          <h3>Clinical Interview</h3>
+          <p>A comprehensive conversation covering your developmental history, current symptoms, life domains affected, and the strategies you&rsquo;ve already tried. This is the foundation of any good assessment.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">Step 02</div>
+          <h3>Evidence-Validated Measures</h3>
+          <p>Standardized assessment tools that have been rigorously validated for adult ADHD &mdash; not just checklists, but measures that distinguish ADHD from anxiety, depression, and other conditions that can look similar.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">Step 03</div>
+          <h3>Written Report &amp; Letter</h3>
+          <p>A clear written report summarizing findings, practical strategies tailored to your specific presentation, and &mdash; where clinically indicated &mdash; a letter suitable for medication evaluation or accommodation requests.</p>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
 
-<!-- CTA -->
-<section class="cta-section">
-  <h2>Ready to get some<br><em>real answers?</em></h2>
-  <p>An assessment is an investment in understanding yourself more accurately. Whether the result is a diagnosis or a clearer picture of what's actually going on, the process itself is worthwhile.</p>
-  <a href="https://linebargerandassociates.clientsecure.me" target="_blank" class="btn-white">Request an Assessment →</a>
-</section>
+  <!-- MEDICATION SECTION -->
+  <section class="med-section">
+    <div class="med-inner">
+      <div>
+        <p class="med-quote">Medication doesn&rsquo;t manage ADHD.<br><em>It powers the strategies that do.</em></p>
+      </div>
+      <div class="med-body">
+        <p>There is a pervasive misconception that medication is the treatment for ADHD. It isn&rsquo;t. Medication can be a powerful tool &mdash; but only when it&rsquo;s amplifying strategies that are already in place. Without structure, systems, and skills, medication has nothing to work with.</p>
+        <p>Think of it this way: medication can sharpen your focus and quiet the noise &mdash; but it cannot teach you how to prioritize, build habits, or manage your time. Those are learned skills, and they require practice regardless of whether you medicate.</p>
+        <p>Dr. Walsh&rsquo;s assessment report includes practical, easy-to-deploy strategies specific to your presentation &mdash; because clarity about your diagnosis is only useful if it comes with a clear path forward.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">
-    <img src="walsh_logo_final.png" alt="Walsh Psychology">
-    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist · Trinidad, CO</span></div>
-  </div>
-  <ul class="footer-nav">
-    <li><a href="forensic.html">Expert Witness</a></li>
-    <li><a href="ai.html">AI Consulting</a></li>
-    <li><a href="therapy.html">Psychotherapy</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <p class="footer-copy">© 2026 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
-</footer>
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to get some<br><em>real answers?</em></h2>
+    <p>An assessment is an investment in understanding yourself more accurately. Whether the result is a diagnosis or a clearer picture of what&rsquo;s actually going on, the process itself is worthwhile.</p>
+    <a href="https://linebargerandassociates.clientsecure.me" target="_blank" rel="noopener noreferrer" class="btn-white">Request an Assessment &rarr;</a>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="walsh_logo_final.png" alt="Walsh Psychology" width="32" height="32" loading="lazy">
+      <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+    </div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="forensic.html">Expert Witness</a></li>
+        <li><a href="ai.html">AI Consulting</a></li>
+        <li><a href="therapy.html">Psychotherapy</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology</p>
+  </footer>
 </body>
 </html>
