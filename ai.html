@@ -11,12 +11,12 @@
   <meta property="og:url" content="https://walshpsychology.com/ai.html">
   <meta property="og:title" content="AI Risk Consulting | Dr. Laura L. Walsh">
   <meta property="og:description" content="Clinical expertise for AI teams building in high-stakes spaces. Identifying where AI systems miss suicide risk, red teaming, safety design, and expert harm review.">
-  <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
+  <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@walshpsychology">
   <meta name="twitter:title" content="AI Risk Consulting | Dr. Laura L. Walsh">
   <meta name="twitter:description" content="Helping AI organizations identify where their systems miss or misread suicide risk. Clinical expertise for high-stakes AI safety.">
-  <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.jpg">
+  <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.webp">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" href="walsh_logo_final.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +69,28 @@
   .closing p{font-size:.95rem;color:var(--mist);line-height:1.85;margin-bottom:2.5rem}
   @media(max-width:900px){.page-hero{padding:8rem 1.5rem 4rem}.problem-grid,.services-grid{grid-template-columns:1fr}.states-grid{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr 1fr}.decision-strip,.closing{padding:4rem 1.5rem}}
   </style>
-</head>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Dr. Laura L. Walsh — AI Suicide Risk Consulting",
+  "description": "AI suicide risk consulting by Dr. Laura L. Walsh. Helping technology organizations build safer systems through clinical expertise in suicide risk assessment.",
+  "url": "https://walshpsychology.com/ai.html",
+  "provider": {
+    "@type": "Person",
+    "name": "Dr. Laura L. Walsh",
+    "jobTitle": "Licensed Clinical Psychologist",
+    "url": "https://walshpsychology.com/"
+  },
+  "serviceType": [
+    "AI Risk Consulting",
+    "Suicide Risk Assessment",
+    "Safety Design Advisory"
+  ]
+}
+    </script>
+  </head>
 <body>
 <nav aria-label="Main navigation">
   <a href="index.html" class="nav-logo">
@@ -85,6 +106,7 @@
   </ul>
   <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
+  <main>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
   <a href="ai.html" onclick="closeMobileMenu()">AI Consulting</a>
@@ -156,17 +178,18 @@
       <div class="decision-card"><div class="decision-if">If you are</div><div class="decision-cond">Already live and improving</div><div class="decision-then">&rarr; Safety Design &amp; Advisory</div></div>
       <div class="decision-card"><div class="decision-if">If</div><div class="decision-cond">Something went wrong</div><div class="decision-then">&rarr; AI Harm &amp; Expert Review</div></div>
     </div>
-    <p style="margin-top:2rem;font-size:.92rem;color:rgba(253,250,246,.75);font-style:italic;">Not sure where to start? Your system likely has blind spots worth examining. <a href="mailto:laura@walshpsych.net?subject=AI%20Risk%20Consulting%20Inquiry" style="color:var(--white);text-decoration:underline;">Let's talk.</a></p>
+    <p style="margin-top:2rem;font-size:.92rem;color:rgba(253,250,246,.75);font-style:italic;">Not sure where to start? Your system likely has blind spots worth examining. <a href="mailto:laura@walshpsychology.com?subject=AI%20Risk%20Consulting%20Inquiry" style="color:var(--white);text-decoration:underline;">Let's talk.</a></p>
   </div>
 </section>
 <section class="closing">
   <div class="closing-inner">
     <h2>AI systems don't fail because<br><em>they lack information.</em></h2>
     <p>They fail because they misread what matters.</p>
-    <a href="mailto:laura@walshpsych.net?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra" aria-label="Request an AI risk consulting session with Dr. Walsh">Request a Consult</a>
+    <a href="mailto:laura@walshpsychology.com?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra" aria-label="Request an AI risk consulting session with Dr. Walsh">Request a Consult</a>
   </div>
 </section>
-<footer>
+</main>
+  <footer>
   <div class="footer-logo">
     <img src="walsh_logo_final.png" alt="Walsh Psychology" width="32" height="32" style="height:32px;width:32px;object-fit:cover;border-radius:3px;opacity:.8;">
     <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist &middot; Trinidad, CO</span></div>
