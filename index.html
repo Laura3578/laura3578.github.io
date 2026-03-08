@@ -79,7 +79,7 @@
 
     body { font-family: var(--sans); background: var(--white); color: var(--slate); overflow-x: hidden; }
 
-    /* ââ NAV ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ NAV Ã¢ÂÂÃ¢ÂÂ */
     nav[aria-label="Main navigation"] {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -89,7 +89,7 @@
       transition: padding 0.3s ease;
       flex-wrap: nowrap;
     }
-    /* Reset footer nav â prevent it from inheriting fixed positioning */
+    /* Reset footer nav Ã¢ÂÂ prevent it from inheriting fixed positioning */
     footer nav { position: static; all: unset; }
     .nav-logo {
       display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
@@ -123,7 +123,7 @@
     }
     .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
 
-    /* ââ HAMBURGER & MOBILE MENU ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ HAMBURGER & MOBILE MENU Ã¢ÂÂÃ¢ÂÂ */
     .nav-hamburger {
       display: none; flex-direction: column; gap: 5px; cursor: pointer;
       padding: 4px; background: none; border: none; z-index: 200;
@@ -153,7 +153,7 @@
       padding: 0.8rem 2rem; border: 1.5px solid var(--terra); color: var(--terra); border-radius: 2px;
     }
 
-    /* ââ HERO ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ HERO Ã¢ÂÂÃ¢ÂÂ */
     .hero {
       min-height: 100vh;
       display: grid; grid-template-columns: 1.2fr 0.8fr;
@@ -249,7 +249,7 @@
     }
     .hero-location::before { content: '\2316 '; color: var(--terra); }
 
-    /* ââ SERVICES ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ SERVICES Ã¢ÂÂÃ¢ÂÂ */
     .services { padding: 8rem 4rem; background: var(--cream); }
     .section-header {
       display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 4.5rem;
@@ -303,7 +303,7 @@
     .service-link::after { content: ''; transition: transform 0.2s; }
     .service-card-featured:hover .service-link::after { transform: translateX(4px); }
 
-    /* ââ ABOUT ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ ABOUT Ã¢ÂÂÃ¢ÂÂ */
     .about {
       padding: 8rem 4rem; background: var(--white);
       display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
@@ -331,7 +331,7 @@
     }
     .specialty-item::before { content: '\2014 '; color: var(--terra); }
 
-    /* ââ REFRAMED ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ REFRAMED Ã¢ÂÂÃ¢ÂÂ */
     .reframed {
       padding: 8rem 4rem; background: var(--slate);
       display: block; position: relative; overflow: hidden;
@@ -371,7 +371,7 @@
     }
     .btn-light:hover { background: var(--terra); border-color: var(--terra); color: var(--white); }
 
-    /* ââ CONTACT ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ CONTACT Ã¢ÂÂÃ¢ÂÂ */
     .contact {
       padding: 8rem 4rem; background: var(--cream);
       display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start;
@@ -396,7 +396,7 @@
       text-transform: uppercase; color: var(--terra); min-width: 80px;
     }
 
-    /* ââ FOOTER ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ FOOTER Ã¢ÂÂÃ¢ÂÂ */
     footer {
       background: var(--deep); padding: 3rem 4rem;
       display: flex; align-items: center; justify-content: space-between;
@@ -416,11 +416,11 @@
     .footer-nav a:hover { color: var(--terra); }
     .footer-copy { font-size: 0.72rem; color: rgba(143,163,177,0.5); letter-spacing: 0.05em; }
 
-    /* ââ ANIMATIONS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ ANIMATIONS Ã¢ÂÂÃ¢ÂÂ */
     @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-    /* ââ RESPONSIVE ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ RESPONSIVE Ã¢ÂÂÃ¢ÂÂ */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 1.5rem; }
       .nav-links { display: none; }
@@ -447,8 +447,8 @@
 
 <!-- NAV -->
 <nav aria-label="Main navigation">
-  <a href="index.html" class="nav-logo" aria-label="Walsh Psychology â Home">
-    <picture><source srcset="walsh_logo_final.webp" type="image/webp"><img src="walsh_logo_final.png" alt="Walsh Psychology" width="42" height="42"></picture>
+  <a href="index.html" class="nav-logo" aria-label="Walsh Psychology Ã¢ÂÂ Home">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="42" height="42">
     <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
   </a>
   <ul class="nav-links">
@@ -619,8 +619,8 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo" style="display:flex;align-items:center;gap:0.75rem;">
-    <picture><source srcset="walsh_logo_final.webp" type="image/webp"><img src="walsh_logo_final.png" alt="Walsh Psychology" width="36" height="36" loading="lazy"
-         style="height:36px;width:36px;object-fit:cover;border-radius:3px;opacity:0.85;"></picture>
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="36" height="36" loading="lazy"
+         style="height:36px;width:36px;object-fit:cover;border-radius:3px;opacity:0.85;">
     <div><strong>Dr. Laura L. Walsh</strong><br><span style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mist);opacity:0.6;">Clinical Psychologist &middot; Trinidad, CO</span></div>
   </div>
   <nav aria-label="Footer navigation">
