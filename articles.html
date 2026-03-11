@@ -4,122 +4,198 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1b2d4a">
-  <title>About Dr. Laura L. Walsh | Clinical Psychologist</title>
-  <meta name="description" content="About Dr. Laura L. Walsh ÃÂ¢ÃÂÃÂ licensed clinical psychologist, expert witness, and AI risk consultant in Trinidad, Colorado. 20+ years of clinical experience across psychology, law, and AI safety.">
-  <link rel="canonical" href="https://walshpsychology.com/about.html">
+  <title>Articles &amp; Writing | Dr. Laura L. Walsh</title>
+  <meta name="description" content="Professional articles and essays by Dr. Laura L. Walsh on suicide risk, AI safety, clinical psychology, and forensic practice.">
+  //walshpsychology.com/articles.html">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://walshpsychology.com/about.html">
-  <meta property="og:title" content="About Dr. Laura L. Walsh | Clinical Psychologist">
-  <meta property="og:description" content="Licensed clinical psychologist, expert witness, and AI risk consultant with 20+ years of experience. Background, clinical approach, and speaking engagements.">
+  <meta property="og:url" content="https://walshpsychology.com/articles.html">
+  <meta property="og:title" content="Articles &amp; Writing | Dr. Laura L. Walsh">
+  <meta property="og:description" content="Professional articles and essays on suicide risk, AI safety, clinical psychology, and forensic practice.">
   <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@walshpsychology">
-  <meta name="twitter:title" content="About Dr. Laura L. Walsh | Clinical Psychologist">
-  <meta name="twitter:description" content="Licensed clinical psychologist, expert witness, and AI risk consultant with 20+ years of experience in Trinidad, Colorado.">
+  <meta name="twitter:title" content="Articles &amp; Writing | Dr. Laura L. Walsh">
+  <meta name="twitter:description" content="Professional articles and essays on suicide risk, AI safety, clinical psychology, and forensic practice.">
   <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.webp">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="walsh_logo_final.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  
+  /svg+xml" href="favicon.svg">
+  /png" href="walsh_logo_final.png">
+  //fonts.googleapis.com">
+  //fonts.gstatic.com" crossorigin>
+  //fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  >
+
   <style>
-  .page-hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;background:#1b2d4a;position:relative;overflow:hidden}
-  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 20% 60%,rgba(184,92,56,.10) 0%,transparent 65%)}
-  .hero-left{display:flex;flex-direction:column;justify-content:center;padding:10rem 3rem 6rem 4rem;position:relative;z-index:1}
-  .page-eyebrow{font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:1.5rem}
-  .page-title{font-family:var(--serif);font-size:clamp(3rem,5vw,5.5rem);font-weight:300;color:var(--cream);line-height:1.05;margin-bottom:1.5rem;white-space:nowrap}
-  .page-title em{font-style:italic;color:var(--sand)}
-  .hero-bio{font-family:var(--serif);font-size:1.15rem;font-weight:300;font-style:italic;color:var(--mist);line-height:1.75;max-width:480px;margin-bottom:3rem}
-  .hero-roles{display:flex;flex-wrap:wrap;gap:.5rem}
-  .role-pill{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.4rem 1rem;border:1px solid rgba(232,220,200,.25);color:var(--sand);border-radius:2px}
-  .hero-right{position:relative;z-index:1}
-  .hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-  .bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
-  .bio-pull{font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:300;font-style:italic;color:var(--slate);line-height:1.5;border-left:3px solid var(--terra);padding-left:2rem;margin-bottom:2rem}
-  .bio-detail{font-size:.85rem;line-height:1.8;color:var(--mist);margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(30,45,61,.08)}
-  .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;margin-top:3rem}
-  .approach-card{background:var(--cream);padding:2.5rem;position:relative;overflow:hidden;transition:transform .25s}
-  .approach-card:hover{transform:translateY(-2px)}
-  .approach-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--terra);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-  .approach-card:hover::after{transform:scaleX(1)}
-  .approach-card h3{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--slate);margin-bottom:.75rem}
-  .approach-card p{font-size:.88rem;line-height:1.8;color:#556070}
-  .approach-num{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem}
-  .reframed{background:var(--slate);padding:6rem 4rem}
-  .reframed-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
-  .reframed-label{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);display:block;margin-bottom:.75rem}
-  .reframed-title{font-family:var(--serif);font-size:clamp(2.5rem,4vw,4rem);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:1.5rem}
-  .reframed-title em{font-style:italic;color:var(--sand)}
-  .reframed-body{font-size:.92rem;line-height:1.85;color:var(--mist);margin-bottom:2rem}
-  .reframed-quote{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;font-style:italic;color:var(--sand);line-height:1.4}
-  .speaking-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:6rem;align-items:center}
-  .speaking-items{display:flex;flex-direction:column;gap:0;margin-top:2rem}
-  .speaking-item{padding:1.5rem 0;border-bottom:1px solid rgba(30,45,61,.08);display:flex;gap:1.5rem;align-items:flex-start}
-  .speaking-item:last-child{border-bottom:none}
-  .speaking-dot{width:6px;height:6px;border-radius:50%;background:var(--terra);flex-shrink:0;margin-top:.45rem}
-  .speaking-item p{font-size:.9rem;line-height:1.7;color:#445566}
-  .speaking-cta{background:var(--slate);padding:3rem}
-  .speaking-cta h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--cream);margin-bottom:1rem}
-  .speaking-cta p{font-size:.88rem;line-height:1.8;color:var(--mist);margin-bottom:2rem}
-  @media(max-width:900px){
-    .page-hero{grid-template-columns:1fr;min-height:auto}
-    .hero-left{padding:8rem 1.5rem 4rem}
-    .hero-right{height:400px}
-    .bio-grid,.speaking-grid,.reframed-inner{grid-template-columns:1fr;gap:3rem}
-    .approach-grid{grid-template-columns:1fr}
-    .reframed{padding:4rem 1.5rem}
-  }
+    .page-hero {
+      min-height: 52vh;
+      background: #1b2d4a;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10rem 4rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 80% 40%, rgba(184,92,56,.12) 0%, transparent 65%);
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+    .page-eyebrow {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 1.2rem;
+    }
+    .page-title {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5vw, 5.5rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+    }
+    .page-title em { font-style: italic; color: var(--sand); }
+    .page-subtitle {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--mist);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+    .articles-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 4rem;
+    }
+    .section-eyebrow {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--terra);
+      display: block;
+      margin-bottom: 2.5rem;
+    }
+    .article-item {
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(30,45,61,.08);
+    }
+    .article-item:last-child { border-bottom: none; }
+    .article-date {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: .5rem;
+    }
+    .article-title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--slate);
+      text-decoration: none;
+      line-height: 1.3;
+      display: block;
+      margin-bottom: .6rem;
+      transition: color .2s;
+    }
+    .article-title:hover { color: var(--terra); }
+    .article-desc {
+      font-size: .9rem;
+      line-height: 1.75;
+      color: #556070;
+      margin-bottom: .75rem;
+    }
+    .article-tag {
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .3rem .8rem;
+      border: 1px solid rgba(30,45,61,.15);
+      color: #778899;
+      border-radius: 2px;
+      display: inline-block;
+      margin-right: .4rem;
+    }
+    .reframed-note {
+      background: var(--slate);
+      padding: 5rem 4rem;
+    }
+    .reframed-note-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .reframed-note p {
+      font-size: .95rem;
+      line-height: 1.85;
+      color: var(--mist);
+    }
+    .reframed-note a { color: var(--sand); }
+    @media(max-width: 900px) {
+      .page-hero { padding: 8rem 1.5rem 4rem; }
+      .articles-section { padding: 3rem 1.5rem; }
+      .reframed-note { padding: 3rem 1.5rem; }
+    }
   </style>
+</head>
 
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dr. Laura L. Walsh",
-  "jobTitle": "Licensed Clinical Psychologist",
-  "description": "Dr. Laura L. Walsh is a licensed clinical psychologist, expert witness, and AI risk consultant based in Trinidad, Colorado.",
-  "url": "https://walshpsychology.com/about.html",
-  "sameAs": [
-    "https://walshpsychology.com/"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Trinidad",
-    "addressRegion": "CO",
-    "addressCountry": "US"
-  },
-  "knowsAbout": [
-    "Clinical Psychology",
-    "Forensic Psychology",
-    "AI Risk Assessment",
-    "ADHD",
-    "Expert Witness Testimony"
-  ]
-}
-    </script>
-  </head>
+<body>
 
-  <!-- HERO -->
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      <picture>
+        <source srcset="walsh_logo_final.webp" type="image/webp">
+        <img src="walsh_logo_final.png" alt="Walsh Psychology">
+      </picture>
+      <span>Dr. Laura L. Walsh <span class="logo-sub">Clinical Psychologist</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="forensic.html">Expert Witness</a>
+      <a href="ai.html">AI Consulting</a>
+      <a href="therapy.html">Psychotherapy</a>
+      <a href="about.html">About</a>
+      <a href="articles.html" class="active">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <nav class="mobile-nav">
+      <a href="forensic.html">Expert Witness</a>
+      <a href="ai.html">AI Consulting</a>
+      <a href="therapy.html">Psychotherapy</a>
+      <a href="about.html">About</a>
+      <a href="articles.html" class="active">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <section class="page-hero">
-    <div class="hero-left">
+    <div class="page-hero-content">
       <p class="page-eyebrow">Writing</p>
       <h1 class="page-title">Articles &amp; <em>Essays</em></h1>
-      <p class="hero-bio">Professional writing on suicide risk, AI safety, clinical psychology, and forensic practice — translating complex ideas for clinicians, attorneys, and thoughtful general readers.</p>
+      <p class="page-subtitle">Professional writing on suicide risk, AI safety, clinical psychology, and forensic practice — translating complex ideas for clinicians, attorneys, and thoughtful general readers.</p>
     </div>
   </section>
 
-  <!-- BREADCRUMB -->
   <div class="breadcrumb-bar">
     <div class="breadcrumb-inner">
-      <a href="index.html">Home</a> · Articles &amp; Writing
+      <a href="index.html">Home</a> &middot; Articles &amp; Writing
     </div>
   </div>
 
-  <!-- ARTICLES -->
-  <main class="articles-grid">
-    <span class="articles-section-label">Selected Professional Writing</span>
+  <main class="articles-section">
+    <span class="section-eyebrow">Selected Professional Writing</span>
 
     <div class="article-item">
       <p class="article-date">March 2026</p>
@@ -145,18 +221,16 @@
 
   </main>
 
-  <!-- REFRAMED NOTE -->
   <div class="reframed-note">
     <div class="reframed-note-inner">
       <p>Additional essays on psychology, grief, relationships, and human behavior are published at <a href="https://reframedself.com" target="_blank" rel="noopener">REFRAMED</a>, Dr. Walsh's Substack publication — a mix of personal voice and clinical insight for general readers.</p>
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p>Walsh Psychology<br>
-      Dr. Laura L. Walsh &nbsp;Clinical Psychologist · Trinidad, CO</p>
+      Dr. Laura L. Walsh &nbsp;Clinical Psychologist &middot; Trinidad, CO</p>
       <nav class="footer-nav">
         <a href="forensic.html">Expert Witness</a>
         <a href="ai.html">AI Consulting</a>
@@ -165,7 +239,7 @@
         <a href="articles.html">Articles</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <p class="footer-legal">© 2026 Dr. Laura L. Walsh · Walsh Psychology · Trinidad, CO</p>
+      <p class="footer-legal">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>
     </div>
   </footer>
 
