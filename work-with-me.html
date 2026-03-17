@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b2d4a">
+  <meta name="robots" content="index, follow">
+  <title>Work With Me | Dr. Laura L. Walsh</title>
+  <meta name="description" content="Engage Dr. Laura L. Walsh for forensic consulting, AI suicide risk consulting, psychedelic medicine consulting, psychotherapy, or speaking. Based in Trinidad, Colorado.">
+  <link rel="canonical" href="https://walshpsychology.com/work-with-me.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://walshpsychology.com/work-with-me.html">
+  <meta property="og:title" content="Work With Me | Dr. Laura L. Walsh">
+  <meta property="og:description" content="Engage Dr. Laura L. Walsh for forensic consulting, AI suicide risk consulting, psychedelic medicine consulting, psychotherapy, or speaking.">
+  <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@walshpsychology">
+  <meta name="twitter:title" content="Work With Me | Dr. Laura L. Walsh">
+  <meta name="twitter:description" content="Engage Dr. Laura L. Walsh for forensic consulting, AI suicide risk consulting, psychedelic medicine consulting, psychotherapy, or speaking.">
+  <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.webp">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="walsh_logo_final.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  .page-hero{min-height:52vh;background:#1b2d4a;display:flex;flex-direction:column;justify-content:flex-end;padding:10rem 4rem 5rem;position:relative;overflow:hidden}
+  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 40%,rgba(184,92,56,.12) 0%,transparent 65%)}
+  .page-hero-content{position:relative;z-index:1;max-width:800px}
+  .page-eyebrow{font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:1.2rem}
+  .page-title{font-family:var(--serif);font-size:clamp(2.8rem,5vw,5.5rem);font-weight:300;color:var(--cream);line-height:1.05;margin-bottom:1.5rem}
+  .page-title em{font-style:italic;color:var(--sand)}
+  .page-subtitle{font-family:var(--serif);font-size:1.2rem;font-weight:300;font-style:italic;color:var(--mist);max-width:580px;line-height:1.7}
+
+  /* Engagement cards */
+  .engagements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5px;margin-top:3rem}
+  .engagement-card{background:var(--cream);padding:3rem;position:relative;overflow:hidden;transition:transform .25s}
+  .engagement-card:hover{transform:translateY(-2px)}
+  .engagement-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--terra);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  .engagement-card:hover::after{transform:scaleX(1)}
+  .engagement-type{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem}
+  .engagement-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--slate);margin-bottom:1rem;line-height:1.2}
+  .engagement-card p{font-size:.88rem;line-height:1.8;color:#556070;margin-bottom:1.25rem}
+  .engagement-card ul{padding-left:1rem;margin-bottom:1.5rem}
+  .engagement-card li{font-size:.85rem;line-height:1.75;color:#556070;margin-bottom:.35rem}
+  .engagement-for{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);margin-bottom:1rem;padding-top:1rem;border-top:1px solid rgba(30,45,61,.08)}
+  .engagement-link{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px}
+  .engagement-link:hover{opacity:.75}
+
+  /* Contact grid */
+  .contact-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:start;padding:5rem 0}
+  .contact-form-area h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--slate);line-height:1.15;margin-bottom:1rem}
+  .contact-form-area h2 em{font-style:italic;color:var(--terra)}
+  .contact-form-area p{font-size:.95rem;line-height:1.9;color:#445566;margin-bottom:2rem}
+  .contact-method{padding:1.5rem 0;border-bottom:1px solid rgba(30,45,61,.08)}
+  .contact-method:last-child{border-bottom:none}
+  .contact-method-label{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:.4rem}
+  .contact-method-val{font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--slate)}
+  .contact-method-val a{color:var(--slate);text-decoration:none;border-bottom:1px solid rgba(30,45,61,.2)}
+  .contact-method-val a:hover{border-bottom-color:var(--terra);color:var(--terra)}
+  .contact-method-note{font-size:.8rem;color:var(--mist);margin-top:.3rem;line-height:1.5}
+  .contact-aside{background:var(--slate);padding:3rem}
+  .contact-aside h3{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:var(--sand);margin-bottom:1.5rem;line-height:1.3}
+  .aside-item{padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+  .aside-item:last-child{border-bottom:none}
+  .aside-label{font-size:.65rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--terra);margin-bottom:.3rem}
+  .aside-val{font-size:.88rem;color:var(--mist);line-height:1.6}
+
+  /* Therapy CTA strip */
+  .therapy-strip{background:var(--sand);padding:4rem 0}
+  .therapy-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+  .therapy-strip h3{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--slate);line-height:1.2;margin-bottom:1rem}
+  .therapy-strip h3 em{font-style:italic;color:var(--terra)}
+  .therapy-strip p{font-size:.92rem;line-height:1.85;color:#445566;margin-bottom:1.5rem}
+
+  @media(max-width:900px){
+    .page-hero{padding:8rem 1.5rem 4rem}
+    .engagements-grid{grid-template-columns:1fr}
+    .contact-grid,.therapy-inner{grid-template-columns:1fr;gap:2.5rem}
+    .therapy-strip{padding:3rem 0}
+  }
+  </style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="38" height="38" style="height:38px;width:38px;object-fit:cover;border-radius:3px;">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Safety</a></li>
+    <li><a href="psychedelic.html">Psychedelic</a></li>
+    <li><a href="therapy.html">Clinical</a></li>
+    <li><a href="writing.html">Writing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work-with-me.html" class="nav-cta active">Work With Me</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="forensic.html" onclick="closeMobileMenu()">Forensic</a>
+  <a href="ai.html" onclick="closeMobileMenu()">AI Safety</a>
+  <a href="psychedelic.html" onclick="closeMobileMenu()">Psychedelic</a>
+  <a href="therapy.html" onclick="closeMobileMenu()">Clinical</a>
+  <a href="writing.html" onclick="closeMobileMenu()">Writing</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="work-with-me.html" class="mobile-cta" onclick="closeMobileMenu()">Work With Me</a>
+</div>
+<script src="nav.js"></script>
+
+<section class="page-hero">
+  <div class="topo-bg" aria-hidden="true"></div>
+  <div class="page-hero-content">
+    <p class="page-eyebrow">Consulting &nbsp;&middot;&nbsp; Expert Witness &nbsp;&middot;&nbsp; Psychotherapy &nbsp;&middot;&nbsp; Speaking</p>
+    <h1 class="page-title">Find the right<br><em>kind of engagement.</em></h1>
+    <p class="page-subtitle">Different work, different starting points. Find what fits your situation below &mdash; or reach out directly if you&rsquo;re not sure where you land.</p>
+  </div>
+</section>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">&middot;</span><span>Work With Me</span></div>
+
+<div class="content-wrap">
+  <section class="section" id="engagements">
+    <span class="section-label">Engagement Types</span>
+    <h2 class="section-title">Four kinds of work.<br><em>Different paths to reach out.</em></h2>
+    <div class="engagements-grid">
+
+      <div class="engagement-card">
+        <div class="engagement-type">01 &mdash; Forensic &amp; Expert Witness</div>
+        <h3>Civil litigation &amp; AI harm cases</h3>
+        <p>Forensic psychological evaluations, attorney consultation, and expert witness testimony for civil and employment matters &mdash; including the emerging category of AI chatbot harm and wrongful death cases.</p>
+        <ul>
+          <li>Psychological injury in civil &amp; employment cases</li>
+          <li>Suicide, bereavement &amp; wrongful death</li>
+          <li>ADHD accommodations &amp; discrimination</li>
+          <li>AI chatbot harm &mdash; transcript analysis &amp; standard-of-care opinions</li>
+          <li>Substance use &amp; co-occurring conditions</li>
+        </ul>
+        <div class="engagement-for">For attorneys &mdash; plaintiff and defense</div>
+        <a href="mailto:laura@walshpsychology.com?subject=Forensic%20Inquiry" class="engagement-link">Email with matter details &rarr;</a>
+      </div>
+
+      <div class="engagement-card">
+        <div class="engagement-type">02 &mdash; AI Safety Consulting</div>
+        <h3>Suicide risk in AI systems</h3>
+        <p>Clinical consulting for technology organizations on where and why AI systems miss or misread suicide risk &mdash; from protocol review and red teaming to safety design and expert harm review.</p>
+        <ul>
+          <li>AI risk review &mdash; identify where your system misses high-risk users</li>
+          <li>Failure mode &amp; red teaming</li>
+          <li>Safety design &amp; advisory</li>
+          <li>AI harm &amp; expert review for active matters</li>
+        </ul>
+        <div class="engagement-for">For AI companies, legal teams &amp; risk counsel</div>
+        <a href="mailto:laura@walshpsychology.com?subject=AI%20Risk%20Consulting%20Inquiry" class="engagement-link">Email with system details &rarr;</a>
+      </div>
+
+      <div class="engagement-card">
+        <div class="engagement-type">03 &mdash; Psychedelic Medicine</div>
+        <h3>Suicide risk in psychedelic settings</h3>
+        <p>Clinical consulting for ketamine clinics, psilocybin programs, and integration practices on screening protocols, facilitator training, crisis management, and the specific suicide risk challenges these patient populations present.</p>
+        <ul>
+          <li>Pre-treatment suicide risk screening &amp; protocol review</li>
+          <li>Facilitator training &mdash; active crisis management during treatment</li>
+          <li>Clinical staff education &amp; training</li>
+          <li>Writing &amp; speaking for professional audiences</li>
+        </ul>
+        <div class="engagement-for">For clinics, programs &amp; training organizations</div>
+        <a href="mailto:laura@walshpsychology.com?subject=Psychedelic%20Medicine%20Consulting%20Inquiry" class="engagement-link">Email with program details &rarr;</a>
+      </div>
+
+      <div class="engagement-card">
+        <div class="engagement-type">04 &mdash; Speaking &amp; Media</div>
+        <h3>Conferences, panels &amp; press</h3>
+        <p>Available for professional conferences, clinical training programs, podcast appearances, and media commentary on AI suicide risk, forensic psychology, psychedelic medicine, and the psychology of grief and loss.</p>
+        <ul>
+          <li>AI suicide risk &mdash; where systems fail and what clinical expertise requires</li>
+          <li>Forensic psychology &amp; AI chatbot harm litigation</li>
+          <li>Suicide risk in psychedelic medicine settings</li>
+          <li>Grief, suicide loss &amp; bereavement</li>
+        </ul>
+        <div class="engagement-for">For event organizers, producers &amp; journalists</div>
+        <a href="mailto:laura@walshpsychology.com?subject=Speaking%20Inquiry" class="engagement-link">Email with event details &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact-grid" id="contact">
+    <div class="contact-form-area">
+      <span class="section-label">Get in Touch</span>
+      <h2>The right next step is<br><em>usually a short email.</em></h2>
+      <p>A brief description of your situation, the timeline, and what you&rsquo;re looking for is enough to get started. Initial conversations are used to assess fit, establish scope, and determine whether the engagement makes sense &mdash; no commitment required.</p>
+      <div class="contact-method">
+        <div class="contact-method-label">Email</div>
+        <div class="contact-method-val"><a href="mailto:laura@walshpsychology.com">laura@walshpsychology.com</a></div>
+        <div class="contact-method-note">Best for all initial inquiries. Expect a response within two business days.</div>
+      </div>
+      <div class="contact-method">
+        <div class="contact-method-label">Phone</div>
+        <div class="contact-method-val"><a href="tel:7205155681">720-515-5681</a></div>
+        <div class="contact-method-note">Available for scheduled calls. Reach out by email first to arrange a time.</div>
+      </div>
+      <div class="contact-method">
+        <div class="contact-method-label">CV</div>
+        <div class="contact-method-val"><a href="https://drlauralwalsh.com/s/Dr-Laura-L-Walsh-CV-Rev-02-26.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a></div>
+        <div class="contact-method-note">Full credentials, training, and professional history.</div>
+      </div>
+    </div>
+    <div class="contact-aside">
+      <h3>Details that help when reaching out</h3>
+      <div class="aside-item">
+        <div class="aside-label">For attorneys</div>
+        <div class="aside-val">Case type, jurisdiction, your role (plaintiff or defense), and approximate timeline. Conflicts check conducted on first call.</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">For AI companies</div>
+        <div class="aside-val">Brief description of the system, what it does, and the specific concern or question. NDA can be discussed before any technical details are shared.</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">For psychedelic providers</div>
+        <div class="aside-val">Type of program, patient population, and the specific gap you&rsquo;re trying to address &mdash; screening, training, protocol review, or something else.</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">For speaking &amp; media</div>
+        <div class="aside-val">Event name, format, audience, date, and any specific topic focus. Green room for journalists and podcast hosts is available on request.</div>
+      </div>
+      <div class="aside-item">
+        <div class="aside-label">Location &amp; licensing</div>
+        <div class="aside-val">Based in Trinidad, Colorado. Licensed in Colorado and Illinois. Federal matters accepted by request.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THERAPY STRIP -->
+<section class="therapy-strip">
+  <div class="content-wrap">
+    <div class="therapy-inner">
+      <div>
+        <h3>Looking for<br><em>individual psychotherapy?</em></h3>
+        <p>Dr. Walsh offers boutique telehealth psychotherapy for adults, couples, and alternative families across Colorado. Private pay with limited sliding scale availability. New clients inquire through the client portal.</p>
+        <a href="therapy.html" class="btn-secondary">Clinical practice &rarr;</a>
+      </div>
+      <div style="background:rgba(30,45,61,.06);padding:2.5rem;">
+        <div style="font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem;">Telehealth &mdash; Colorado</div>
+        <ul style="list-style:none;padding:0;">
+          <li style="font-size:.87rem;color:#445566;padding:.6rem 0;border-bottom:1px solid rgba(30,45,61,.08);">Individual therapy &mdash; adults</li>
+          <li style="font-size:.87rem;color:#445566;padding:.6rem 0;border-bottom:1px solid rgba(30,45,61,.08);">Relationship &amp; couples therapy</li>
+          <li style="font-size:.87rem;color:#445566;padding:.6rem 0;border-bottom:1px solid rgba(30,45,61,.08);">ADHD assessment &amp; evaluation</li>
+          <li style="font-size:.87rem;color:#445566;padding:.6rem 0;">Private pay &middot; Limited sliding scale</li>
+        </ul>
+        <a href="https://linebargerandassociates.clientsecure.me" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:1.25rem;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px;">Client portal &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="32" height="32" style="height:32px;width:32px;object-fit:cover;border-radius:3px;opacity:.8;">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist &middot; Trinidad, CO</span></div>
+  </div>
+  <nav aria-label="Footer navigation">
+    <ul class="footer-nav">
+      <li><a href="forensic.html">Forensic</a></li>
+      <li><a href="ai.html">AI Safety</a></li>
+      <li><a href="psychedelic.html">Psychedelic</a></li>
+      <li><a href="therapy.html">Clinical</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work-with-me.html">Work With Me</a></li>
+    </ul>
+  </nav>
+  <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>
+</footer>
+</body>
+</html>
