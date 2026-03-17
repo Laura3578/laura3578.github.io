@@ -67,6 +67,7 @@
     if (btn) {
       btn.setAttribute('aria-expanded', 'false');
       btn.setAttribute('aria-controls', 'mobileMenu');
+              btn.addEventListener('click', toggleMobileMenu);
     }
   });
 }());
