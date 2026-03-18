@@ -60,7 +60,7 @@
     nav[aria-label="Main navigation"] {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1.4rem 4rem;
+      padding: 1.4rem 2.5rem;
       background: rgba(253,250,246,0.92); backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(30,45,61,0.08);
       transition: padding 0.3s ease; flex-wrap: nowrap;
@@ -73,10 +73,10 @@
     .nav-logo img { display: block; height: 42px; width: 42px; min-width: 42px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
     .nav-logo-text { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--slate); letter-spacing: 0.02em; line-height: 1.15; white-space: nowrap; }
     .nav-logo-text span { color: var(--terra); display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: var(--sans); font-weight: 500; }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; margin-left: auto; }
-    .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; margin-left: auto; }
+    .nav-links a { font-family: var(--sans); font-size: 0.72rem;; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--terra); }
-    .nav-cta { font-size: 0.78rem !important; padding: 0.55rem 1.4rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; }
+    .nav-cta { font-size: 0.72rem !important; padding: 0.55rem 1.2rem; border: 1.5px solid var(--terra); border-radius: 2px; color: var(--terra) !important; white-space: nowrap; }
     .nav-cta:hover { background: var(--terra); color: var(--white) !important; }
     .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; z-index: 200; }
     .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--slate); transition: all 0.3s ease; border-radius: 2px; }
@@ -165,7 +165,10 @@
     .footer-copy { font-size: 0.72rem; color: rgba(143,163,177,0.5); letter-spacing: 0.05em; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) and (min-width: 901px) {
+  .services-featured { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
       nav[aria-label="Main navigation"] { padding: 1.2rem 1.5rem; }
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
@@ -268,7 +271,7 @@
       <h3>AI Suicide Risk<br>Consulting</h3>
       <p>Helping technology organizations identify where their AI systems misread or miss suicide risk and high-risk decision states &mdash; so teams can build safer products with genuine clinical grounding.</p>
       <div class="sfeat-tags"><span>AI Suicide Risk</span><span>High-Risk Decision States</span><span>Red Teaming</span><span>Safety Design</span></div>
-      <a href="ai-litigation.html" style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);text-decoration:none;display:block;margin-bottom:0.75rem;">AI Harm &amp; Expert Witness &rarr;</a>
+      <div role="link" tabindex="0" onclick="location.href='ai-litigation.html'" onkeydown="if(event.key==='Enter')location.href='ai-litigation.html'" style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);cursor:pointer;display:block;margin-bottom:0.75rem;">AI Harm &amp; Expert Witness &rarr;</div>
     <span class="service-link" style="margin-top:auto;">For Organizations &rarr;</span>
     </a>
     <a href="therapy.html" class="service-card-featured" aria-label="Adult Psychotherapy">
@@ -277,7 +280,7 @@
       <h3>Adult Psychotherapy</h3>
       <p>Boutique telehealth for adults, couples, and alternative families across Colorado. Practical, active, and authentic &mdash; helping people become the changemakers in their own lives.</p>
       <div class="sfeat-tags"><span>Adult ADHD</span><span>Grief &amp; Suicide Loss</span><span>Trauma &amp; Attachment</span><span>Relationships</span></div>
-      <a href="adhd.html" style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);text-decoration:none;display:block;margin-bottom:0.75rem;">ADHD Assessment &rarr;</a>
+      <div role="link" tabindex="0" onclick="location.href='adhd.html'" onkeydown="if(event.key==='Enter')location.href='adhd.html'" style="font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);cursor:pointer;display:block;margin-bottom:0.75rem;">ADHD Assessment &rarr;</div>
     <span class="service-link" style="margin-top:auto;">For Individuals &rarr;</span>
     </a>
     <a href="psychedelic.html" class="service-card-featured service-card-featured--ai" aria-label="Psychedelic Medicine Consulting">
